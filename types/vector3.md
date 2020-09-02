@@ -1,5 +1,5 @@
 ---
-title: Vector3 - Three dimensional vectors
+title: vector3
 description: 
 published: true
 tags: 

@@ -1,6 +1,6 @@
 # Deviap Documentation
 
-This repo contains open sourced markdown language file components produced for Deviap, this repository is houses the documentation in our docs site..
+This repo contains open sourced markdown language file components produced for Deviap, this repository is houses the documentation in our [docs site](https://deviap.com/docs).
 
 # Contributing to Deviap
 

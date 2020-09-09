@@ -7,6 +7,9 @@ A block has several properties than can be altered via a simple script. As an ex
 block.colour = colour.white()
 ```
 
+**Note**:
+`block.metalness` and `block.roughness` can ***only*** have a value from 0 to 1.
+
 ## Block Events
 Sometimes, on certain *events*, we may want to manipulate properties of a block. The `block` class accepts three events:
 - Changed,

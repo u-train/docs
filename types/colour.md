@@ -7,7 +7,7 @@ tags:
 
 # Colour
 
-Colours consist of three components: `r`, `g`, `b`.
+Colours consist of three components: `r`, `g`, `b`, which are red, green, and blue respectively. 
 
 ## Constructors
 

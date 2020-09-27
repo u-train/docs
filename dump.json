@@ -1,188 +1,176 @@
 {
     "sandbox": {
-        "loadstring": "function",
-        "teverse": [],
-        "gcinfo": "function",
-        "print": "function",
-        "_VERSION": "Lua 5.1",
-        "coroutine": {
-            "status": "function",
-            "running": "function",
-            "isyieldable": "function",
-            "create": "function",
-            "yield": "function",
-            "resume": "function",
-            "wrap": "function"
+        "core": {
+            "guiHelper": "guiHelper",
+            "workshop": "workshop",
+            "load": "function",
+            "base64": "base64",
+            "dev": "dev",
+            "tween": "tween",
+            "interface": "guiFrame",
+            "disconnect": "function",
+            "datastore": "datastore",
+            "http": "http",
+            "scene": "scene",
+            "graphics": "graphics",
+            "networking": "networking",
+            "json": "json",
+            "settings": "settings",
+            "reflection": "reflection",
+            "debug": "debug",
+            "process": "process",
+            "construct": "function",
+            "input": "input"
+        },
+        "warn": "function",
+        "require": "function",
+        "assert": "function",
+        "string": {
+            "startsWith": "function",
+            "len": "function",
+            "byte": "function",
+            "char": "function",
+            "sub": "function",
+            "rep": "function",
+            "reverse": "function",
+            "lower": "function",
+            "lastIndexOf": "function",
+            "dump": "function",
+            "endsWith": "function",
+            "match": "function",
+            "gmatch": "function",
+            "gsub": "function",
+            "format": "function",
+            "upper": "function",
+            "find": "function",
+            "split": "function"
+        },
+        "thread": {
+            "create": "function"
         },
         "spawn": "function",
         "enums": {
-            "lineCap": {
-                "square": "2",
-                "but": "0",
-                "round": "1"
-            },
             "keys": {
-                "KEY_INTERNATIONAL6": "140",
-                "KEY_INTERNATIONAL7": "141",
-                "KEY_INTERNATIONAL8": "142",
-                "KEY_INTERNATIONAL9": "143",
-                "KEY_LANG1": "144",
-                "KEY_LANG2": "145",
-                "KEY_LANG3": "146",
-                "KEY_LANG4": "147",
-                "KEY_LANG5": "148",
-                "KEY_LANG6": "149",
-                "KEY_LANG7": "150",
-                "KEY_LANG8": "151",
-                "KEY_LANG9": "152",
-                "KEY_ALTERASE": "153",
-                "KEY_SYSREQ": "154",
-                "KEY_CANCEL": "155",
-                "KEY_CLEAR": "156",
-                "KEY_PRIOR": "157",
-                "KEY_RETURN2": "158",
-                "KEY_SEPARATOR": "159",
-                "KEY_OUT": "160",
-                "KEY_OPER": "161",
-                "KEY_CLEARAGAIN": "162",
-                "KEY_CRSEL": "163",
-                "KEY_EXSEL": "164",
-                "KEY_KP_00": "176",
-                "KEY_KP_000": "177",
-                "KEY_THOUSANDSSEPARATOR": "178",
-                "KEY_DECIMALSEPARATOR": "179",
-                "KEY_CURRENCYUNIT": "180",
-                "KEY_CURRENCYSUBUNIT": "181",
-                "KEY_KP_LEFTPAREN": "182",
-                "KEY_KP_RIGHTPAREN": "183",
-                "KEY_KP_LEFTBRACE": "184",
-                "KEY_KP_RIGHTBRACE": "185",
-                "KEY_KP_TAB": "186",
-                "KEY_KP_BACKSPACE": "187",
-                "KEY_KP_A": "188",
-                "KEY_KP_B": "189",
-                "KEY_KP_C": "190",
-                "KEY_KP_D": "191",
                 "KEY_KP_E": "192",
-                "KEY_KP_F": "193",
-                "KEY_KP_XOR": "194",
-                "KEY_KP_POWER": "195",
-                "KEY_KP_PERCENT": "196",
-                "KEY_KP_LESS": "197",
-                "KEY_KP_GREATER": "198",
-                "KEY_KP_AMPERSAND": "199",
-                "KEY_KP_DBLAMPERSAND": "200",
-                "KEY_KP_VERTICALBAR": "201",
-                "KEY_KP_DBLVERTICALBAR": "202",
-                "KEY_KP_COLON": "203",
-                "KEY_KP_HASH": "204",
-                "KEY_KP_SPACE": "205",
-                "KEY_KP_AT": "206",
-                "KEY_KP_EXCLAM": "207",
-                "KEY_KP_MEMSTORE": "208",
-                "KEY_KP_MEMRECALL": "209",
-                "KEY_KP_MEMCLEAR": "210",
-                "KEY_KP_MEMADD": "211",
-                "KEY_KP_MEMSUBTRACT": "212",
-                "KEY_KP_MEMMULTIPLY": "213",
-                "KEY_KP_MEMDIVIDE": "214",
-                "KEY_KP_PLUSMINUS": "215",
-                "KEY_KP_CLEAR": "216",
-                "KEY_KP_CLEARENTRY": "217",
-                "KEY_KP_BINARY": "218",
-                "KEY_KP_OCTAL": "219",
-                "KEY_KP_DECIMAL": "220",
-                "KEY_KP_HEXADECIMAL": "221",
-                "KEY_LCTRL": "224",
-                "KEY_LSHIFT": "225",
-                "KEY_LALT": "226",
-                "KEY_LGUI": "227",
-                "KEY_RCTRL": "228",
-                "KEY_RSHIFT": "229",
-                "KEY_RALT": "230",
-                "KEY_RGUI": "231",
-                "KEY_MODE": "257",
-                "KEY_AUDIONEXT": "258",
-                "KEY_AUDIOPREV": "259",
-                "KEY_AUDIOSTOP": "260",
-                "KEY_AUDIOPLAY": "261",
-                "KEY_AUDIOMUTE": "262",
-                "KEY_MEDIASELECT": "263",
-                "KEY_WWW": "264",
-                "KEY_MAIL": "265",
-                "KEY_CALCULATOR": "266",
-                "KEY_COMPUTER": "267",
-                "KEY_AC_SEARCH": "268",
-                "KEY_AC_HOME": "269",
-                "KEY_AC_BACK": "270",
-                "KEY_AC_FORWARD": "271",
-                "KEY_AC_STOP": "272",
-                "KEY_AC_REFRESH": "273",
-                "KEY_AC_BOOKMARKS": "274",
-                "KEY_BRIGHTNESSDOWN": "275",
-                "KEY_BRIGHTNESSUP": "276",
-                "KEY_DISPLAYSWITCH": "277",
-                "KEY_KBDILLUMTOGGLE": "278",
-                "KEY_KBDILLUMDOWN": "279",
-                "KEY_KBDILLUMUP": "280",
-                "KEY_EJECT": "281",
-                "KEY_SLEEP": "282",
-                "KEY_APP1": "283",
-                "KEY_APP2": "284",
-                "KEY_AUDIOREWIND": "285",
-                "KEY_AUDIOFASTFORWARD": "286",
-                "NUM_SCANCODES": "512",
-                "KEY_UNKNOWN": "0",
-                "KEY_A": "4",
+                "KEY_F24": "115",
                 "KEY_B": "5",
-                "KEY_C": "6",
-                "KEY_D": "7",
-                "KEY_E": "8",
-                "KEY_F": "9",
-                "KEY_G": "10",
-                "KEY_H": "11",
-                "KEY_I": "12",
-                "KEY_J": "13",
-                "KEY_K": "14",
-                "KEY_L": "15",
-                "KEY_M": "16",
-                "KEY_N": "17",
-                "KEY_O": "18",
-                "KEY_P": "19",
-                "KEY_Q": "20",
-                "KEY_R": "21",
+                "KEY_AGAIN": "121",
+                "KEY_FIND": "126",
+                "KEY_VOLUMEUP": "128",
+                "KEY_KP_PLUSMINUS": "215",
+                "KEY_KP_CLEARENTRY": "217",
                 "KEY_S": "22",
                 "KEY_T": "23",
                 "KEY_U": "24",
                 "KEY_V": "25",
                 "KEY_W": "26",
-                "KEY_X": "27",
-                "KEY_Y": "28",
-                "KEY_Z": "29",
-                "KEY_1": "30",
-                "KEY_2": "31",
-                "KEY_3": "32",
-                "KEY_4": "33",
-                "KEY_5": "34",
-                "KEY_6": "35",
-                "KEY_7": "36",
-                "KEY_8": "37",
+                "KEY_GRAVE": "53",
+                "KEY_APOSTROPHE": "52",
+                "KEY_KP_000": "177",
+                "KEY_KP_00": "176",
+                "KEY_BACKSLASH": "49",
+                "KEY_RIGHTBRACKET": "48",
+                "KEY_LEFTBRACKET": "47",
+                "KEY_OPER": "161",
+                "KEY_MINUS": "45",
+                "KEY_SPACE": "44",
+                "KEY_RETURN2": "158",
+                "KEY_BACKSPACE": "42",
+                "KEY_CLEAR": "156",
+                "KEY_MAIL": "265",
+                "KEY_SYSREQ": "154",
                 "KEY_9": "38",
-                "KEY_0": "39",
+                "KEY_8": "37",
+                "KEY_7": "36",
+                "KEY_LANG7": "150",
+                "KEY_AUDIOPREV": "259",
+                "KEY_AUDIONEXT": "258",
+                "KEY_MODE": "257",
+                "KEY_2": "31",
+                "KEY_RALT": "230",
+                "KEY_RSHIFT": "229",
+                "KEY_RCTRL": "228",
+                "KEY_LGUI": "227",
+                "KEY_LALT": "226",
+                "KEY_INTERNATIONAL6": "140",
+                "KEY_LCTRL": "224",
+                "KEY_KP_HEXADECIMAL": "221",
+                "KEY_INTERNATIONAL3": "137",
+                "KEY_R": "21",
+                "KEY_KP_BINARY": "218",
+                "KEY_KP_EQUALSAS400": "134",
+                "KEY_KP_CLEAR": "216",
+                "KEY_VOLUMEDOWN": "129",
+                "KEY_KP_MEMDIVIDE": "214",
+                "KEY_KP_MEMMULTIPLY": "213",
+                "KEY_K": "14",
+                "KEY_PASTE": "125",
+                "KEY_I": "12",
+                "KEY_KP_MEMRECALL": "209",
+                "KEY_G": "10",
+                "KEY_F": "9",
+                "KEY_E": "8",
+                "KEY_SELECT": "119",
+                "KEY_MENU": "118",
+                "KEY_HELP": "117",
+                "KEY_KP_DBLVERTICALBAR": "202",
+                "KEY_KP_VERTICALBAR": "201",
+                "KEY_KP_DBLAMPERSAND": "200",
+                "KEY_F22": "113",
+                "KEY_KP_GREATER": "198",
+                "KEY_KP_LESS": "197",
+                "KEY_KP_PERCENT": "196",
+                "KEY_F18": "109",
+                "KEY_F17": "108",
+                "KEY_KP_F": "193",
+                "KEY_WWW": "264",
                 "KEY_RETURN": "40",
                 "KEY_ESCAPE": "41",
-                "KEY_BACKSPACE": "42",
-                "KEY_TAB": "43",
-                "KEY_SPACE": "44",
-                "KEY_MINUS": "45",
-                "KEY_EQUALS": "46",
-                "KEY_LEFTBRACKET": "47",
-                "KEY_RIGHTBRACKET": "48",
-                "KEY_BACKSLASH": "49",
-                "KEY_NONUSHASH": "50",
-                "KEY_SEMICOLON": "51",
-                "KEY_APOSTROPHE": "52",
-                "KEY_GRAVE": "53",
+                "KEY_ALTERASE": "153",
+                "KEY_LANG9": "152",
+                "KEY_LANG8": "151",
+                "KEY_6": "35",
+                "KEY_LANG6": "149",
+                "KEY_LANG5": "148",
+                "KEY_LANG4": "147",
+                "KEY_RGUI": "231",
+                "KEY_LANG2": "145",
+                "KEY_LANG1": "144",
+                "NUM_SCANCODES": "512",
+                "KEY_AUDIOFASTFORWARD": "286",
+                "KEY_AUDIOREWIND": "285",
+                "KEY_APP2": "284",
+                "KEY_APP1": "283",
+                "KEY_KP_ENTER": "88",
+                "KEY_KP_PLUS": "87",
+                "KEY_KBDILLUMUP": "280",
+                "KEY_KBDILLUMDOWN": "279",
+                "KEY_KBDILLUMTOGGLE": "278",
+                "KEY_DISPLAYSWITCH": "277",
+                "KEY_BRIGHTNESSUP": "276",
+                "KEY_DOWN": "81",
+                "KEY_LEFT": "80",
+                "KEY_AC_REFRESH": "273",
+                "KEY_AC_STOP": "272",
+                "KEY_AC_FORWARD": "271",
+                "KEY_AC_BACK": "270",
+                "KEY_PAGEUP": "75",
+                "KEY_HOME": "74",
+                "KEY_COMPUTER": "267",
+                "KEY_INTERNATIONAL9": "143",
+                "KEY_INTERNATIONAL8": "142",
+                "KEY_INTERNATIONAL2": "136",
+                "KEY_Q": "20",
+                "KEY_KP_COMMA": "133",
+                "KEY_MUTE": "127",
+                "KEY_J": "13",
+                "KEY_COPY": "124",
+                "KEY_H": "11",
+                "KEY_UNDO": "122",
+                "KEY_STOP": "120",
+                "KEY_EXECUTE": "116",
+                "KEY_C": "6",
+                "KEY_D": "7",
                 "KEY_COMMA": "54",
                 "KEY_PERIOD": "55",
                 "KEY_SLASH": "56",
@@ -203,21 +191,21 @@
                 "KEY_SCROLLLOCK": "71",
                 "KEY_PAUSE": "72",
                 "KEY_INSERT": "73",
-                "KEY_HOME": "74",
-                "KEY_PAGEUP": "75",
+                "KEY_AC_SEARCH": "268",
+                "KEY_AC_HOME": "269",
                 "KEY_DELETE": "76",
                 "KEY_END": "77",
                 "KEY_PAGEDOWN": "78",
                 "KEY_RIGHT": "79",
-                "KEY_LEFT": "80",
-                "KEY_DOWN": "81",
+                "KEY_AC_BOOKMARKS": "274",
+                "KEY_BRIGHTNESSDOWN": "275",
                 "KEY_UP": "82",
                 "KEY_NUMLOCKCLEAR": "83",
                 "KEY_KP_DIVIDE": "84",
                 "KEY_KP_MULTIPLY": "85",
                 "KEY_KP_MINUS": "86",
-                "KEY_KP_PLUS": "87",
-                "KEY_KP_ENTER": "88",
+                "KEY_EJECT": "281",
+                "KEY_SLEEP": "282",
                 "KEY_KP_1": "89",
                 "KEY_KP_2": "90",
                 "KEY_KP_3": "91",
@@ -237,35 +225,76 @@
                 "KEY_F14": "105",
                 "KEY_F15": "106",
                 "KEY_F16": "107",
-                "KEY_F17": "108",
-                "KEY_F18": "109",
+                "KEY_KP_XOR": "194",
+                "KEY_KP_POWER": "195",
                 "KEY_F19": "110",
                 "KEY_F20": "111",
                 "KEY_F21": "112",
-                "KEY_F22": "113",
+                "KEY_KP_AMPERSAND": "199",
                 "KEY_F23": "114",
-                "KEY_F24": "115",
-                "KEY_EXECUTE": "116",
-                "KEY_HELP": "117",
-                "KEY_MENU": "118",
-                "KEY_SELECT": "119",
-                "KEY_STOP": "120",
-                "KEY_AGAIN": "121",
-                "KEY_UNDO": "122",
+                "KEY_UNKNOWN": "0",
+                "KEY_A": "4",
+                "KEY_KP_COLON": "203",
+                "KEY_KP_HASH": "204",
+                "KEY_KP_SPACE": "205",
+                "KEY_KP_AT": "206",
+                "KEY_KP_EXCLAM": "207",
+                "KEY_KP_MEMSTORE": "208",
                 "KEY_CUT": "123",
-                "KEY_COPY": "124",
-                "KEY_PASTE": "125",
-                "KEY_FIND": "126",
-                "KEY_MUTE": "127",
-                "KEY_VOLUMEUP": "128",
-                "KEY_VOLUMEDOWN": "129",
-                "KEY_KP_COMMA": "133",
-                "KEY_KP_EQUALSAS400": "134",
+                "KEY_KP_MEMCLEAR": "210",
+                "KEY_KP_MEMADD": "211",
+                "KEY_KP_MEMSUBTRACT": "212",
+                "KEY_L": "15",
+                "KEY_M": "16",
+                "KEY_N": "17",
+                "KEY_O": "18",
+                "KEY_P": "19",
                 "KEY_INTERNATIONAL1": "135",
-                "KEY_INTERNATIONAL2": "136",
-                "KEY_INTERNATIONAL3": "137",
+                "KEY_KP_OCTAL": "219",
+                "KEY_KP_DECIMAL": "220",
                 "KEY_INTERNATIONAL4": "138",
-                "KEY_INTERNATIONAL5": "139"
+                "KEY_INTERNATIONAL5": "139",
+                "KEY_LSHIFT": "225",
+                "KEY_INTERNATIONAL7": "141",
+                "KEY_X": "27",
+                "KEY_Y": "28",
+                "KEY_Z": "29",
+                "KEY_1": "30",
+                "KEY_LANG3": "146",
+                "KEY_3": "32",
+                "KEY_4": "33",
+                "KEY_5": "34",
+                "KEY_AUDIOSTOP": "260",
+                "KEY_AUDIOPLAY": "261",
+                "KEY_AUDIOMUTE": "262",
+                "KEY_MEDIASELECT": "263",
+                "KEY_0": "39",
+                "KEY_CANCEL": "155",
+                "KEY_CALCULATOR": "266",
+                "KEY_PRIOR": "157",
+                "KEY_TAB": "43",
+                "KEY_SEPARATOR": "159",
+                "KEY_OUT": "160",
+                "KEY_EQUALS": "46",
+                "KEY_CLEARAGAIN": "162",
+                "KEY_CRSEL": "163",
+                "KEY_EXSEL": "164",
+                "KEY_NONUSHASH": "50",
+                "KEY_SEMICOLON": "51",
+                "KEY_THOUSANDSSEPARATOR": "178",
+                "KEY_DECIMALSEPARATOR": "179",
+                "KEY_CURRENCYUNIT": "180",
+                "KEY_CURRENCYSUBUNIT": "181",
+                "KEY_KP_LEFTPAREN": "182",
+                "KEY_KP_RIGHTPAREN": "183",
+                "KEY_KP_LEFTBRACE": "184",
+                "KEY_KP_RIGHTBRACE": "185",
+                "KEY_KP_TAB": "186",
+                "KEY_KP_BACKSPACE": "187",
+                "KEY_KP_A": "188",
+                "KEY_KP_B": "189",
+                "KEY_KP_C": "190",
+                "KEY_KP_D": "191"
             },
             "membershipType": {
                 "none": "0",
@@ -273,14 +302,14 @@
                 "plus": "1"
             },
             "iconType": {
+                "faRegular": "1",
+                "faSolid": "2",
+                "material": "3",
                 "materialOutline": "4",
                 "materialRound": "5",
                 "materialSharp": "6",
                 "materialTwoTone": "7",
-                "faBrand": "0",
-                "faRegular": "1",
-                "faSolid": "2",
-                "material": "3"
+                "faBrand": "0"
             },
             "align": {
                 "topLeft": "0",
@@ -292,10 +321,78 @@
                 "bottomLeft": "6",
                 "bottomMiddle": "7",
                 "bottomRight": "8"
+            },
+            "lineCap": {
+                "but": "0",
+                "round": "1",
+                "square": "2"
             }
         },
+        "table": {
+            "sort": "function",
+            "foreachi": "function",
+            "foreach": "function",
+            "getn": "function",
+            "maxn": "function",
+            "insert": "function",
+            "remove": "function",
+            "move": "function",
+            "concat": "function"
+        },
+        "type": "function",
+        "next": "function",
+        "pairs": "function",
+        "ipairs": "function",
+        "_ARCH": "x64",
+        "_OS": "OSX",
+        "_DEVICE_PAD_BOTTOM": 0,
+        "_DEVICE": "Mac",
+        "_TEV_BUILD": "0280",
+        "_TEV_VERSION_PATCH": 0,
+        "_TEV_VERSION_MINOR": 28,
+        "select": "function",
+        "tonumber": "function",
+        "tostring": "function",
+        "error": "function",
+        "pcall": "function",
+        "xpcall": "function",
+        "loadstring": "function",
+        "gcinfo": "function",
+        "print": "function",
+        "_VERSION": "Lua 5.1",
+        "coroutine": {
+            "running": "function",
+            "isyieldable": "function",
+            "create": "function",
+            "yield": "function",
+            "resume": "function",
+            "wrap": "function",
+            "status": "function"
+        },
+        "colour": "ctype<struct 113>",
+        "os": {
+            "clock": "function",
+            "date": "function",
+            "time": "function",
+            "difftime": "function",
+            "parseISO8601": "function"
+        },
         "sleep": "function",
+        "vector2": "ctype<struct vector2>",
+        "unpack": "function",
+        "_TEV_VERSION": "0.28.0",
+        "vector3": "ctype<struct vector3>",
+        "_TEV_VERSION_MAJOR": 0,
+        "quaternion": "ctype<struct quaternion>",
         "math": {
+            "ceil": "function",
+            "sqrt": "function",
+            "log10": "function",
+            "exp": "function",
+            "sin": "function",
+            "cos": "function",
+            "tan": "function",
+            "asin": "function",
             "acos": "function",
             "atan": "function",
             "sinh": "function",
@@ -316,445 +413,108 @@
             "huge": 0,
             "random": "function",
             "randomseed": "function",
-            "log10": "function",
-            "exp": "function",
             "abs": "function",
-            "floor": "function",
-            "ceil": "function",
-            "sqrt": "function",
-            "sin": "function",
-            "cos": "function",
-            "tan": "function",
-            "asin": "function"
+            "floor": "function"
         },
-        "_ARCH": "x64",
-        "_OS": "OSX",
-        "warn": "function",
-        "_DEVICE": "Mac",
-        "_TEV_BUILD": "0280",
-        "_TEV_VERSION_PATCH": 0,
-        "_TEV_VERSION_MINOR": 28,
-        "_TEV_VERSION_MAJOR": 0,
-        "_TEV_VERSION": "0.28.0",
-        "core": {
-            "load": "function",
-            "guiHelper": "guiHelper",
-            "reflection": "reflection",
-            "construct": "function",
-            "disconnect": "function",
-            "base64": "base64",
-            "dev": "dev",
-            "http": "http",
-            "debug": "debug",
-            "interface": "guiFrame",
-            "input": "input",
-            "scene": "scene",
-            "json": "json",
-            "graphics": "graphics",
-            "tween": "tween",
-            "networking": "networking",
-            "datastore": "datastore",
-            "workshop": "workshop",
-            "process": "process",
-            "settings": "settings"
-        },
-        "string": {
-            "lastIndexOf": "function",
-            "startsWith": "function",
-            "endsWith": "function",
-            "split": "function",
-            "byte": "function",
-            "char": "function",
-            "sub": "function",
-            "rep": "function",
-            "reverse": "function",
-            "lower": "function",
-            "upper": "function",
-            "dump": "function",
-            "find": "function",
-            "match": "function",
-            "gmatch": "function",
-            "gsub": "function",
-            "format": "function",
-            "len": "function"
-        },
-        "thread": {
-            "create": "function"
-        },
-        "table": {
-            "foreachi": "function",
-            "foreach": "function",
-            "getn": "function",
-            "maxn": "function",
-            "insert": "function",
-            "remove": "function",
-            "move": "function",
-            "concat": "function",
-            "sort": "function"
-        },
-        "require": "function",
-        "type": "function",
-        "next": "function",
-        "pairs": "function",
-        "ipairs": "function",
-        "os": {
-            "difftime": "function",
-            "clock": "function",
-            "date": "function",
-            "time": "function",
-            "parseISO8601": "function"
-        },
-        "colour": "ctype<struct 113>",
-        "_DEVICE_PAD_BOTTOM": 0,
-        "vector2": "ctype<struct vector2>",
-        "tostring": "function",
-        "select": "function",
-        "vector3": "ctype<struct vector3>",
-        "unpack": "function",
-        "quaternion": "ctype<struct quaternion>",
-        "tonumber": "function",
         "guiCoord": "function",
-        "error": "function",
-        "pcall": "function",
-        "xpcall": "function",
-        "assert": "function"
+        "teverse": []
     },
     "classes": {
-        "scene": {
+        "guiHelper": {
             "events": [],
-            "properties": {
-                "simulate": {
-                    "type": "boolean",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": ""
-                },
-                "children": {
-                    "type": "table",
-                    "hasGetter": true,
-                    "hasSetter": false,
-                    "description": ""
-                },
-                "gravity": {
-                    "type": "vector3",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": ""
-                },
-                "camera": {
-                    "hasGetter": true,
-                    "hasSetter": false,
-                    "type": "Undocumented"
-                }
-            },
             "constructable": false,
-            "className": "scene",
             "methods": {
-                "raycast": {
-                    "returns": [
-                        "table"
-                    ],
-                    "parameters": [
-                        {
-                            "name": "a",
-                            "type": "vector3"
-                        },
-                        {
-                            "name": "b",
-                            "type": "vector3"
-                        }
-                    ],
-                    "description": "Returns a table of dictionaries for each hit. Example dict: {hit=,position=,normal=}"
-                },
-                "destroyChildren": {
+                "rehook": {
+                    "description": "Undocumented",
                     "returns": [],
-                    "parameters": [],
-                    "description": "Destroys all children"
+                    "parameters": []
                 },
-                "raycastOne": {
-                    "returns": [
-                        "sceneObject",
-                        " vector3",
-                        " vector3"
-                    ],
-                    "parameters": [
-                        {
-                            "name": "a",
-                            "type": "vector3"
-                        },
-                        {
-                            "name": "b",
-                            "type": "vector3"
-                        }
-                    ],
-                    "description": "Returns an object, pos, normal or nil if there is no hit"
-                },
-                "child": {
-                    "returns": [
-                        "sceneObject"
-                    ],
-                    "parameters": [
-                        {
-                            "name": "name",
-                            "type": "string"
-                        }
-                    ],
-                    "description": "Returns nil if not found"
-                }
-            }
-        },
-        "json": {
-            "events": [],
-            "properties": [],
-            "constructable": false,
-            "className": "json",
-            "methods": {
-                "encodeWithTypes": {
-                    "returns": [
-                        "string"
-                    ],
-                    "parameters": [
-                        {
-                            "name": "toEncode",
-                            "type": "variant"
-                        }
-                    ],
-                    "description": ""
-                },
-                "encode": {
-                    "returns": [
-                        "string"
-                    ],
-                    "parameters": [
-                        {
-                            "name": "toEncode",
-                            "type": "variant"
-                        }
-                    ],
-                    "description": ""
-                },
-                "decode": {
-                    "returns": [
-                        "table"
-                    ],
-                    "parameters": [
-                        {
-                            "name": "json",
-                            "type": "string"
-                        }
-                    ],
-                    "description": ""
-                }
-            }
-        },
-        "guiLine": {
-            "events": [],
-            "properties": {
-                "pointA": {
-                    "type": "guiCoord",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": "Position of where the line starts relative to the parent element."
-                },
-                "lineCap": {
-                    "type": "enums.lineCap",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": "Determines how lines are capped"
-                },
-                "pointB": {
-                    "type": "guiCoord",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": "Position of where the line ends relative to the parent element."
-                },
-                "lineColour": {
-                    "type": "colour",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": ""
-                },
-                "lineAlpha": {
-                    "type": "number",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": "An alpha value of 1.0 is completely visible, 0.0 is invisible."
-                },
-                "lineWidth": {
-                    "type": "number",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": ""
-                }
-            },
-            "extends": "guiBase",
-            "constructable": true,
-            "className": "guiLine",
-            "methods": []
-        },
-        "sceneObject": {
-            "events": [],
-            "properties": {
-                "absolutePosition": {
-                    "type": "vector3",
-                    "hasGetter": true,
-                    "hasSetter": false,
-                    "description": ""
-                },
-                "absoluteRotation": {
-                    "type": "quaternion",
-                    "hasGetter": true,
-                    "hasSetter": false,
-                    "description": ""
-                },
-                "parent": {
-                    "type": "sceneObject",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": ""
-                },
-                "position": {
-                    "type": "vector3",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": ""
-                },
-                "rotation": {
-                    "type": "quaternion",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": ""
-                }
-            },
-            "extends": "objectBase",
-            "constructable": false,
-            "className": "sceneObject",
-            "methods": {
-                "lookAt": {
+                "gridConstraint": {
+                    "description": "Quick and dirty way of setting up child elements to follow a simple grid alignment",
                     "returns": [],
                     "parameters": [
                         {
-                            "name": "vector",
-                            "type": "vector3"
+                            "name": "gui",
+                            "type": "guiBase"
+                        },
+                        {
+                            "name": "properties",
+                            "type": "table"
                         }
-                    ],
-                    "description": "Points the sceneObject towards the provided vector"
-                }
-            }
-        },
-        "guiFrame": {
-            "events": [],
-            "properties": {
-                "absolutePosition": {
-                    "type": "vector2",
-                    "hasGetter": true,
-                    "hasSetter": false,
-                    "description": "Absolute position in pixels from the top left of the screen"
+                    ]
                 },
-                "dropShadowColour": {
-                    "type": "colour",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": ""
+                "hide": {
+                    "description": "Hide this element for the breakpoint provided",
+                    "returns": [],
+                    "parameters": [
+                        {
+                            "name": "gui",
+                            "type": "guiBase"
+                        },
+                        {
+                            "name": "bp",
+                            "type": "breakpoint"
+                        }
+                    ]
                 },
-                "backgroundColour": {
-                    "type": "colour",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": ""
+                "bind": {
+                    "description": "Apply properties to this element for a particular breakpoint",
+                    "returns": [],
+                    "parameters": [
+                        {
+                            "name": "gui",
+                            "type": "guiBase"
+                        },
+                        {
+                            "name": "bp",
+                            "type": "breakpoint"
+                        },
+                        {
+                            "name": "properties",
+                            "type": "table"
+                        }
+                    ]
                 },
-                "strokeColour": {
-                    "type": "colour",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": ""
+                "show": {
+                    "description": "Show this element for the breakpoint provided",
+                    "returns": [],
+                    "parameters": [
+                        {
+                            "name": "gui",
+                            "type": "guiBase"
+                        },
+                        {
+                            "name": "bp",
+                            "type": "breakpoint"
+                        }
+                    ]
                 },
-                "position": {
-                    "type": "guiCoord",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": "Position relative to the parent element"
+                "hoverColour": {
+                    "description": "Set the colour of the gui on hover",
+                    "returns": [],
+                    "parameters": [
+                        {
+                            "name": "gui",
+                            "type": "guiBase"
+                        }
+                    ]
                 },
-                "strokeAlpha": {
-                    "type": "number",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": ""
-                },
-                "dropShadowOffset": {
-                    "type": "vector2",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": ""
-                },
-                "strokeRadius": {
-                    "type": "number",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": ""
-                },
-                "dropShadowAlpha": {
-                    "type": "number",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": ""
-                },
-                "strokeWidth": {
-                    "type": "number",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": ""
-                },
-                "size": {
-                    "type": "guiCoord",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": "Size relative to the parent element"
-                },
-                "backgroundAlpha": {
-                    "type": "number",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": "An alpha value of 1.0 is completely visible, 0.0 is invisible."
-                },
-                "dropShadowBlur": {
-                    "type": "number",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": ""
-                },
-                "absoluteSize": {
-                    "type": "vector2",
-                    "hasGetter": true,
-                    "hasSetter": false,
-                    "description": "Absolute size in pixels"
+                "setupGrid": {
+                    "description": "Internal use only",
+                    "returns": [],
+                    "parameters": []
                 }
             },
-            "extends": "guiBase",
-            "constructable": true,
-            "className": "guiFrame",
-            "methods": []
+            "className": "guiHelper",
+            "properties": []
         },
         "guiRichTextBox": {
             "events": [],
-            "properties": {
-                "colours": {
-                    "type": "table",
-                    "hasGetter": true,
-                    "hasSetter": false,
-                    "description": "Returns a table of {index, colour} (e.g: {{1, colour(1,0,0)}, {3, colour(0,1,0)}})"
-                }
-            },
-            "extends": "guiTextBox",
             "constructable": true,
-            "className": "guiRichTextBox",
+            "extends": "guiTextBox",
             "methods": {
-                "clearColours": {
-                    "returns": [],
-                    "parameters": [],
-                    "description": "Removes any set colours at all indexes"
-                },
                 "setColour": {
+                    "description": "Sets the colour of text onwards from the provided index",
                     "returns": [],
                     "parameters": [
                         {
@@ -765,128 +525,96 @@
                             "name": "colour",
                             "type": "colour"
                         }
-                    ],
-                    "description": "Sets the colour of text onwards from the provided index"
+                    ]
                 },
                 "removeColour": {
+                    "description": "Removes any set colour at the index provided",
                     "returns": [],
                     "parameters": [
                         {
                             "name": "index",
                             "type": "int"
                         }
-                    ],
-                    "description": "Removes any set colour at the index provided"
+                    ]
+                },
+                "clearColours": {
+                    "description": "Removes any set colours at all indexes",
+                    "returns": [],
+                    "parameters": []
+                }
+            },
+            "className": "guiRichTextBox",
+            "properties": {
+                "colours": {
+                    "hasSetter": false,
+                    "description": "Returns a table of {index, colour} (e.g: {{1, colour(1,0,0)}, {3, colour(0,1,0)}})",
+                    "type": "table",
+                    "hasGetter": true
                 }
             }
         },
-        "guiLineBezier": {
-            "events": [],
-            "properties": {
-                "controlB": {
-                    "type": "guiCoord",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": "Control position relative to the parent element"
-                },
-                "controlA": {
-                    "type": "guiCoord",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": "Control position relative to the parent element"
-                }
-            },
-            "extends": "guiLine",
-            "constructable": true,
-            "className": "guiLineBezier",
-            "methods": []
-        },
-        "guiIcon": {
-            "events": [],
-            "properties": {
-                "shadowColour": {
-                    "type": "colour",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": ""
-                },
-                "shadowSize": {
-                    "type": "number",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": ""
-                },
-                "iconId": {
-                    "type": "string",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": ""
-                },
-                "iconType": {
-                    "type": "enums.iconType",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": ""
-                },
-                "iconAlpha": {
-                    "type": "number",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": ""
-                },
-                "iconColour": {
-                    "type": "colour",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": ""
-                },
-                "iconMax": {
-                    "type": "number",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": ""
-                }
-            },
-            "extends": "guiFrame",
-            "constructable": true,
-            "className": "guiIcon",
-            "methods": []
-        },
-        "workshop": {
-            "events": [],
-            "properties": {
-                "appLocation": {
-                    "type": "string",
-                    "hasGetter": true,
-                    "hasSetter": false,
-                    "description": "Absolute path to the app on the filesystem"
-                }
-            },
-            "constructable": false,
-            "className": "workshop",
-            "methods": {
-                "writeFile": {
-                    "returns": [],
+        "apps": {
+            "events": {
+                "upload": {
                     "parameters": [
                         {
-                            "name": "file",
+                            "name": "success",
+                            "type": "boolean"
+                        },
+                        {
+                            "name": "app",
+                            "type": "table"
+                        }
+                    ],
+                    "description": "Fired when an upload fails or succeeds"
+                },
+                "changed": {
+                    "parameters": [
+                        {
+                            "name": "property",
                             "type": "string"
                         },
                         {
-                            "name": "contents",
+                            "name": "oldValue",
+                            "type": "variant"
+                        },
+                        {
+                            "name": "newValue",
+                            "type": "variant"
+                        }
+                    ],
+                    "description": "Fired when a property is changed."
+                },
+                "download": {
+                    "parameters": [
+                        {
+                            "name": "success",
+                            "type": "boolean"
+                        },
+                        {
+                            "name": "message",
                             "type": "string"
                         }
                     ],
-                    "description": "Writes to the specified file in the app directory"
+                    "description": "Fired when an download fails or succeeds"
+                }
+            },
+            "constructable": false,
+            "methods": {
+                "upload": {
+                    "description": "Starts uploading the currently loaded UNPACKAGED app",
+                    "returns": [],
+                    "parameters": []
                 },
-                "getAppFiles": {
+                "recentDirectories": {
+                    "description": "Returns a table of strings",
                     "returns": [
                         "table"
                     ],
-                    "parameters": [],
-                    "description": "Returns a table of strings"
+                    "parameters": []
                 },
-                "openRecent": {
+                "runRecent": {
+                    "description": "Run a app directory returned by recentDirectories",
                     "returns": [
                         "boolean"
                     ],
@@ -895,29 +623,55 @@
                             "name": "path",
                             "type": "string"
                         }
-                    ],
-                    "description": "Open a app directory returned by teverse.apps:recentDirectories"
+                    ]
                 },
-                "readFile": {
-                    "returns": [
-                        "string"
-                    ],
-                    "parameters": [
-                        {
-                            "name": "file",
-                            "type": "string"
-                        }
-                    ],
-                    "description": "Returns the contents of the specified file in the app directory"
-                },
-                "promptOpen": {
+                "promptAppDirectory": {
+                    "description": "Prompts the user to select a directory containing the manifest.json file",
                     "returns": [
                         "boolean"
                     ],
-                    "parameters": [],
-                    "description": "Prompts the user to select their app directory."
+                    "parameters": []
+                },
+                "reset": {
+                    "description": "Resets the environment",
+                    "returns": [],
+                    "parameters": []
+                },
+                "promptApp": {
+                    "description": "Prompts the user to select a .deviap file",
+                    "returns": [
+                        "boolean"
+                    ],
+                    "parameters": []
+                },
+                "loadWorkshop": {
+                    "description": "Resets the environment and loads the default Workshop app",
+                    "returns": [],
+                    "parameters": []
+                },
+                "loadDashboard": {
+                    "description": "Resets the environment and loads the default Dashboard app",
+                    "returns": [],
+                    "parameters": []
+                },
+                "loadRemote": {
+                    "description": "Loads a remote app based on guid",
+                    "returns": [],
+                    "parameters": []
+                },
+                "reload": {
+                    "description": "Resets the environment and reloads the loaded app",
+                    "returns": [],
+                    "parameters": []
+                },
+                "test": {
+                    "description": "Uploads the unpackaged app and spins up a temporary test server on our cloud",
+                    "returns": [],
+                    "parameters": []
                 }
-            }
+            },
+            "className": "apps",
+            "properties": []
         },
         "block": {
             "events": {
@@ -947,123 +701,38 @@
                     "description": ""
                 }
             },
-            "properties": {
-                "colour": {
-                    "type": "colour",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": ""
-                },
-                "angularFactor": {
-                    "type": "vector3",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": ""
-                },
-                "visible": {
-                    "type": "boolean",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": "When true, this object is rendered. Note that when false this object still exists and can still be simulated."
-                },
-                "metalness": {
-                    "type": "number",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": ""
-                },
-                "joints": {
-                    "type": "table<joint>",
-                    "hasGetter": true,
-                    "hasSetter": false,
-                    "description": ""
-                },
-                "roughness": {
-                    "type": "number",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": ""
-                },
-                "animations": {
-                    "type": "table<string>",
-                    "hasGetter": true,
-                    "hasSetter": false,
-                    "description": "Get available animations for the loaded mesh."
-                },
-                "mesh": {
-                    "type": "string",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": ""
-                },
-                "simulated": {
-                    "type": "boolean",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": "When false, an object is no longer simulated and doesn't interact with other simulated objects"
-                },
-                "meshScale": {
-                    "type": "vector3",
-                    "hasGetter": true,
-                    "hasSetter": false,
-                    "description": "How big the mesh is relative to the standard teverse unit size"
-                },
-                "velocity": {
-                    "type": "vector3",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": ""
-                },
-                "scale": {
-                    "type": "vector3",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": ""
-                },
-                "angularVelocity": {
-                    "type": "vector3",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": ""
-                },
-                "static": {
-                    "type": "boolean",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": "When true, an object is unaffected by gravity and other forces, but other objects may still collide with the object"
-                },
-                "linearFactor": {
-                    "type": "vector3",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": ""
-                }
-            },
-            "extends": "sceneObject",
             "constructable": true,
-            "className": "block",
+            "extends": "sceneObject",
             "methods": {
+                "stopAnimation": {
+                    "description": "Returns true if successful.",
+                    "returns": [
+                        "bool"
+                    ],
+                    "parameters": []
+                },
                 "applyImpulseAtPosition": {
+                    "description": "",
                     "returns": [],
                     "parameters": [
                         {
                             "name": "force,",
                             "type": "vector3"
                         }
-                    ],
-                    "description": ""
+                    ]
                 },
                 "applyForceAtPosition": {
+                    "description": "",
                     "returns": [],
                     "parameters": [
                         {
                             "name": "force,",
                             "type": "vector3"
                         }
-                    ],
-                    "description": ""
+                    ]
                 },
                 "playAnimation": {
+                    "description": "Returns true if successful",
                     "returns": [
                         "bool"
                     ],
@@ -1080,30 +749,30 @@
                             "name": "?speed",
                             "type": "number"
                         }
-                    ],
-                    "description": "Returns true if successful"
+                    ]
                 },
                 "applyForce": {
+                    "description": "",
                     "returns": [],
                     "parameters": [
                         {
                             "name": "force",
                             "type": "vector3"
                         }
-                    ],
-                    "description": ""
+                    ]
                 },
                 "applyTorqueImpulse": {
+                    "description": "",
                     "returns": [],
                     "parameters": [
                         {
                             "name": "force",
                             "type": "vector3"
                         }
-                    ],
-                    "description": ""
+                    ]
                 },
                 "setAnimationSpeed": {
+                    "description": "Returns true if successful. Changes the running animation's speed",
                     "returns": [
                         "bool"
                     ],
@@ -1112,22 +781,20 @@
                             "name": "speed",
                             "type": "number"
                         }
-                    ],
-                    "description": "Returns true if successful. Changes the running animation's speed"
+                    ]
                 },
-                "setAnimationLoop": {
-                    "returns": [
-                        "bool"
-                    ],
+                "applyTorque": {
+                    "description": "",
+                    "returns": [],
                     "parameters": [
                         {
-                            "name": "loop",
-                            "type": "bool"
+                            "name": "force",
+                            "type": "vector3"
                         }
-                    ],
-                    "description": "Returns true if successful. Changes the running animation's loop status"
+                    ]
                 },
                 "getJoint": {
+                    "description": "Get a joint from it's name",
                     "returns": [
                         "joint"
                     ],
@@ -1136,820 +803,122 @@
                             "name": "name",
                             "type": "string"
                         }
-                    ],
-                    "description": "Get a joint from it's name"
+                    ]
                 },
-                "stopAnimation": {
+                "setAnimationLoop": {
+                    "description": "Returns true if successful. Changes the running animation's loop status",
                     "returns": [
                         "bool"
                     ],
-                    "parameters": [],
-                    "description": "Returns true if successful."
-                },
-                "applyTorque": {
-                    "returns": [],
                     "parameters": [
                         {
-                            "name": "force",
-                            "type": "vector3"
+                            "name": "loop",
+                            "type": "bool"
                         }
-                    ],
-                    "description": ""
+                    ]
                 },
                 "applyImpulse": {
+                    "description": "",
                     "returns": [],
                     "parameters": [
                         {
                             "name": "force",
                             "type": "vector3"
                         }
-                    ],
-                    "description": ""
-                }
-            }
-        },
-        "dev": {
-            "events": [],
-            "properties": {
-                "localTevGit": {
-                    "type": "string",
-                    "hasGetter": true,
-                    "hasSetter": false,
-                    "description": "Deprecated"
-                },
-                "interface": {
-                    "type": "interface",
-                    "hasGetter": true,
-                    "hasSetter": false,
-                    "description": "Workshop level interface, renders above the core.interface singleton"
-                },
-                "localDevGitEnabled": {
-                    "type": "string",
-                    "hasGetter": true,
-                    "hasSetter": false,
-                    "description": "Returns true if a local tevgit has been set."
-                },
-                "localDevGitPath": {
-                    "type": "string",
-                    "hasGetter": true,
-                    "hasSetter": false,
-                    "description": "Returns path to the local devgit"
+                    ]
                 }
             },
-            "constructable": false,
-            "className": "dev",
-            "methods": {
-                "promptDevGit": {
-                    "returns": [],
-                    "parameters": [],
-                    "description": "Prompts the user to select a directory for DevGit."
-                },
-                "reloadAllShaders": {
-                    "returns": [],
-                    "parameters": [],
-                    "description": "Reloads all shaders."
-                },
-                "startWebSocket": {
-                    "returns": [],
-                    "parameters": [],
-                    "description": "Starts the websocket server on the default port"
-                },
-                "getWebSocketStatus": {
-                    "returns": [
-                        "boolean"
-                    ],
-                    "parameters": [],
-                    "description": "Returns true if the websocket is running"
-                },
-                "stopWebSocket": {
-                    "returns": [],
-                    "parameters": [],
-                    "description": "Stops the websocket server"
-                }
-            }
-        },
-        "settings": {
-            "events": [],
-            "properties": [],
-            "constructable": false,
-            "className": "settings",
-            "methods": {
-                "all": {
-                    "returns": [
-                        "table"
-                    ],
-                    "parameters": [],
-                    "description": "Returns a table of all the settings persisted"
-                },
-                "set": {
-                    "returns": [],
-                    "parameters": [
-                        {
-                            "name": "key,",
-                            "type": "string"
-                        }
-                    ],
-                    "description": "provided value should be a string for defined signal"
-                },
-                "get": {
-                    "returns": [
-                        "string"
-                    ],
-                    "parameters": [
-                        {
-                            "name": "key",
-                            "type": "string"
-                        }
-                    ],
-                    "description": "returns a string from the persisted settings with the given key"
-                }
-            }
-        },
-        "debug": {
-            "events": {
-                "error": {
-                    "parameters": [
-                        {
-                            "name": "message",
-                            "type": "string"
-                        }
-                    ],
-                    "description": "Fired when a error occurs"
-                },
-                "print": {
-                    "parameters": [
-                        {
-                            "name": "message",
-                            "type": "string"
-                        }
-                    ],
-                    "description": "Fired when a print occurs"
-                },
-                "changed": {
-                    "parameters": [
-                        {
-                            "name": "property",
-                            "type": "string"
-                        },
-                        {
-                            "name": "oldValue",
-                            "type": "variant"
-                        },
-                        {
-                            "name": "newValue",
-                            "type": "variant"
-                        }
-                    ],
-                    "description": "Fired when a property is changed."
-                },
-                "warn": {
-                    "parameters": [
-                        {
-                            "name": "message",
-                            "type": "string"
-                        }
-                    ],
-                    "description": "Fired when a warn occurs"
-                }
-            },
-            "properties": [],
-            "constructable": false,
-            "className": "debug",
-            "methods": {
-                "clearOutputHistory": {
-                    "returns": [],
-                    "parameters": [],
-                    "description": "Clears the output history"
-                },
-                "traceback": {
-                    "returns": [
-                        "string"
-                    ],
-                    "parameters": [],
-                    "description": "Returns a string with a traceback of the stack call."
-                },
-                "getOutputHistory": {
-                    "returns": [
-                        "table"
-                    ],
-                    "parameters": [],
-                    "description": "Returns a table of dictionaries: {time, message, messageType}"
-                },
-                "schedulerUi": {
-                    "returns": [],
-                    "parameters": [],
-                    "description": "Undocumented"
-                }
-            }
-        },
-        "guiGradientFrame": {
-            "events": [],
+            "className": "block",
             "properties": {
-                "strokeAlphaB": {
-                    "type": "colour",
-                    "hasGetter": true,
+                "visible": {
                     "hasSetter": true,
-                    "description": "An alpha value of 1.0 is completely visible, 0.0 is invisible."
-                },
-                "backgroundColourB": {
-                    "type": "colour",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": ""
-                },
-                "backgroundAlphaB": {
-                    "type": "number",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": "An alpha value of 1.0 is completely visible, 0.0 is invisible."
-                },
-                "finish": {
-                    "type": "guiCoord",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": "Position where the gradient ends, relative to the top left corner of this element."
-                },
-                "strokeColourB": {
-                    "type": "colour",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": ""
-                },
-                "start": {
-                    "type": "guiCoord",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": "Position where the gradient begins, relative to the top left corner of this element."
-                }
-            },
-            "extends": "guiFrame",
-            "constructable": true,
-            "className": "guiGradientFrame",
-            "methods": []
-        },
-        "guiScrollView": {
-            "events": [],
-            "properties": {
-                "scrollbarColour": {
-                    "type": "colour",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": ""
-                },
-                "canvasSize": {
-                    "type": "guiCoord",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": "If bigger than 1,0,1,0, scrollvars will be visible"
-                },
-                "canvasOffset": {
-                    "type": "vector2",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": ""
-                },
-                "scrollbarRadius": {
-                    "type": "number",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": ""
-                },
-                "scrollbarWidth": {
-                    "type": "number",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": ""
-                },
-                "scrollbarAlpha": {
-                    "type": "number",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": ""
-                }
-            },
-            "extends": "guiFrame",
-            "constructable": true,
-            "className": "guiScrollView",
-            "methods": []
-        },
-        "guiHelper": {
-            "events": [],
-            "properties": [],
-            "constructable": false,
-            "className": "guiHelper",
-            "methods": {
-                "setupGrid": {
-                    "returns": [],
-                    "parameters": [],
-                    "description": "Internal use only"
-                },
-                "rehook": {
-                    "returns": [],
-                    "parameters": [],
-                    "description": "Undocumented"
-                },
-                "gridConstraint": {
-                    "returns": [],
-                    "parameters": [
-                        {
-                            "name": "gui",
-                            "type": "guiBase"
-                        },
-                        {
-                            "name": "properties",
-                            "type": "table"
-                        }
-                    ],
-                    "description": "Quick and dirty way of setting up child elements to follow a simple grid alignment"
-                },
-                "bind": {
-                    "returns": [],
-                    "parameters": [
-                        {
-                            "name": "gui",
-                            "type": "guiBase"
-                        },
-                        {
-                            "name": "bp",
-                            "type": "breakpoint"
-                        },
-                        {
-                            "name": "properties",
-                            "type": "table"
-                        }
-                    ],
-                    "description": "Apply properties to this element for a particular breakpoint"
-                },
-                "hide": {
-                    "returns": [],
-                    "parameters": [
-                        {
-                            "name": "gui",
-                            "type": "guiBase"
-                        },
-                        {
-                            "name": "bp",
-                            "type": "breakpoint"
-                        }
-                    ],
-                    "description": "Hide this element for the breakpoint provided"
-                },
-                "show": {
-                    "returns": [],
-                    "parameters": [
-                        {
-                            "name": "gui",
-                            "type": "guiBase"
-                        },
-                        {
-                            "name": "bp",
-                            "type": "breakpoint"
-                        }
-                    ],
-                    "description": "Show this element for the breakpoint provided"
-                },
-                "hoverColour": {
-                    "returns": [],
-                    "parameters": [
-                        {
-                            "name": "gui",
-                            "type": "guiBase"
-                        }
-                    ],
-                    "description": "Set the colour of the gui on hover"
-                }
-            }
-        },
-        "camera": {
-            "events": [],
-            "properties": {
-                "fov": {
-                    "type": "number",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": "field of view"
-                },
-                "position": {
-                    "type": "vector3",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": ""
-                },
-                "rotation": {
-                    "type": "quaternion",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": ""
-                }
-            },
-            "constructable": false,
-            "className": "camera",
-            "methods": {
-                "lookAt": {
-                    "returns": [],
-                    "parameters": [
-                        {
-                            "name": "vector",
-                            "type": "vector3"
-                        }
-                    ],
-                    "description": "Points the camera towards the provided vector"
-                },
-                "worldToScreen": {
-                    "returns": [
-                        "vector2",
-                        " number"
-                    ],
-                    "parameters": [
-                        {
-                            "name": "wPos",
-                            "type": "vector3"
-                        }
-                    ],
-                    "description": "Returns a 2d screen space vector and a number representing depth"
-                },
-                "screenToWorld": {
-                    "returns": [
-                        "vector3"
-                    ],
-                    "parameters": [
-                        {
-                            "name": "screenPos",
-                            "type": "vector2"
-                        }
-                    ],
-                    "description": "Returns a 3d vector"
-                }
-            }
-        },
-        "objectBase": {
-            "events": [],
-            "properties": {
-                "name": {
-                    "type": "string",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": ""
-                },
-                "id": {
-                    "type": "number",
-                    "hasGetter": true,
-                    "hasSetter": false,
-                    "description": ""
-                }
-            },
-            "constructable": false,
-            "className": "objectBase",
-            "methods": {
-                "destroy": {
-                    "returns": [],
-                    "parameters": [],
-                    "description": "Destroys this object, further accessing this instance will error"
-                }
-            }
-        },
-        "directionalLight": {
-            "events": [],
-            "properties": [],
-            "extends": "light",
-            "constructable": true,
-            "className": "directionalLight",
-            "methods": []
-        },
-        "client": {
-            "events": [],
-            "properties": {
-                "beta": {
+                    "description": "When true, this object is rendered. Note that when false this object still exists and can still be simulated.",
                     "type": "boolean",
-                    "hasGetter": true,
-                    "hasSetter": false,
-                    "description": "True if this account has beta privelages"
+                    "hasGetter": true
                 },
-                "membership": {
-                    "type": "number",
-                    "hasGetter": true,
-                    "hasSetter": false,
-                    "description": ""
-                },
-                "name": {
-                    "type": "string",
-                    "hasGetter": true,
-                    "hasSetter": false,
-                    "description": "Unique name for this user"
-                },
-                "id": {
-                    "type": "string",
-                    "hasGetter": true,
-                    "hasSetter": false,
-                    "description": "Unique GUID for this user"
-                }
-            },
-            "constructable": false,
-            "className": "client",
-            "methods": []
-        },
-        "joint": {
-            "events": [],
-            "properties": {
                 "scale": {
+                    "hasSetter": true,
+                    "description": "",
                     "type": "vector3",
-                    "hasGetter": true,
+                    "hasGetter": true
+                },
+                "angularVelocity": {
                     "hasSetter": true,
-                    "description": ""
-                },
-                "name": {
-                    "type": "string",
-                    "hasGetter": true,
-                    "hasSetter": false,
-                    "description": ""
-                },
-                "position": {
+                    "description": "",
                     "type": "vector3",
-                    "hasGetter": true,
+                    "hasGetter": true
+                },
+                "linearFactor": {
                     "hasSetter": true,
-                    "description": ""
+                    "description": "",
+                    "type": "vector3",
+                    "hasGetter": true
                 },
-                "rotation": {
-                    "type": "quaternion",
-                    "hasGetter": true,
+                "static": {
                     "hasSetter": true,
-                    "description": ""
-                }
-            },
-            "constructable": false,
-            "className": "joint",
-            "methods": []
-        },
-        "tween": {
-            "events": [],
-            "properties": [],
-            "constructable": false,
-            "className": "tween",
-            "methods": {
-                "create": {
-                    "returns": [],
-                    "parameters": [
-                        {
-                            "name": "object",
-                            "type": "variant"
-                        },
-                        {
-                            "name": "duration",
-                            "type": "number"
-                        },
-                        {
-                            "name": "properties",
-                            "type": "table"
-                        },
-                        {
-                            "name": "easing",
-                            "type": "string"
-                        },
-                        {
-                            "name": "tweenCallback",
-                            "type": "function?"
-                        }
-                    ],
-                    "description": "Creates a tween"
+                    "description": "When true, an object is unaffected by gravity and other forces, but other objects may still collide with the object",
+                    "type": "boolean",
+                    "hasGetter": true
                 },
-                "begin": {
-                    "returns": [],
-                    "parameters": [
-                        {
-                            "name": "object",
-                            "type": "variant"
-                        },
-                        {
-                            "name": "duration",
-                            "type": "number"
-                        },
-                        {
-                            "name": "properties",
-                            "type": "table"
-                        },
-                        {
-                            "name": "easing",
-                            "type": "string"
-                        },
-                        {
-                            "name": "tweenCallback",
-                            "type": "function?"
-                        }
-                    ],
-                    "description": "Creates and starts a tween"
-                }
-            }
-        },
-        "guiTextBox": {
-            "events": {
-                "keyUp": {
-                    "parameters": [
-                        {
-                            "name": "keyCode",
-                            "type": "enums.keysym"
-                        }
-                    ],
-                    "description": "Key released"
-                },
-                "keyDown": {
-                    "parameters": [
-                        {
-                            "name": "keyCode",
-                            "type": "enums.keysym"
-                        }
-                    ],
-                    "description": "Key pressed"
-                }
-            },
-            "properties": {
-                "textAlpha": {
-                    "type": "number",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": "0.0 makes the text fully transparent and invisible."
-                },
-                "textSize": {
-                    "type": "number",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": "Size of the text rendered"
-                },
-                "textShadowSize": {
-                    "type": "number",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": "When 0, no shadow is rendered. Increasing this value will determine how much the shadow spreads."
-                },
-                "text": {
-                    "type": "string",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": "The text rendered"
-                },
-                "textColour": {
-                    "type": "colour",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": "Colour of the text rendered"
-                },
-                "textAlign": {
-                    "type": "enums.align",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": "Determines the rendered text is aligned"
-                },
-                "textFont": {
-                    "type": "string",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": "Determines the rendered text's font"
-                },
-                "textShadowColour": {
-                    "type": "colour",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": "The text shadow colour, rendered as a blurred backing."
-                },
-                "textDimensions": {
-                    "type": "string",
-                    "hasGetter": true,
+                "meshScale": {
                     "hasSetter": false,
-                    "description": "Gets the bounds of the text"
+                    "description": "How big the mesh is relative to the standard teverse unit size",
+                    "type": "vector3",
+                    "hasGetter": true
                 },
-                "textWrap": {
-                    "type": "boolean",
-                    "hasGetter": true,
+                "angularFactor": {
                     "hasSetter": true,
-                    "description": "When true, text wraps onto a new line with new line characters."
+                    "description": "",
+                    "type": "vector3",
+                    "hasGetter": true
                 },
-                "textEditable": {
-                    "type": "boolean",
-                    "hasGetter": true,
+                "mesh": {
                     "hasSetter": true,
-                    "description": "When true, the user can input into this box"
+                    "description": "",
+                    "type": "string",
+                    "hasGetter": true
                 },
-                "textMultiline": {
-                    "type": "boolean",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": "When true, user can input newline characters."
-                }
-            },
-            "extends": "guiFrame",
-            "constructable": true,
-            "className": "guiTextBox",
-            "methods": {
-                "setFocus": {
-                    "returns": [],
-                    "parameters": [],
-                    "description": "Focuses this element and allows keyboard input. Loads on-screen keyboard if the device is touch based."
-                }
-            }
-        },
-        "light": {
-            "events": [],
-            "properties": {
                 "colour": {
-                    "type": "colour",
-                    "hasGetter": true,
                     "hasSetter": true,
-                    "description": ""
-                }
-            },
-            "extends": "sceneObject",
-            "constructable": false,
-            "className": "light",
-            "methods": []
-        },
-        "http": {
-            "events": [],
-            "properties": [],
-            "constructable": false,
-            "className": "http",
-            "methods": {
-                "post": {
-                    "returns": [],
-                    "parameters": [
-                        {
-                            "name": "url",
-                            "type": "string"
-                        },
-                        {
-                            "name": "body",
-                            "type": "string"
-                        },
-                        {
-                            "name": "?headers",
-                            "type": "table"
-                        },
-                        {
-                            "name": "?callback",
-                            "type": "function"
-                        }
-                    ],
-                    "description": "Sends a POST request. If callback is provided, this function is nonblocking and returns nil. If callback is not provided, this function yields and returns statusCode, body."
+                    "description": "",
+                    "type": "colour",
+                    "hasGetter": true
                 },
-                "get": {
-                    "returns": [],
-                    "parameters": [
-                        {
-                            "name": "url",
-                            "type": "string"
-                        },
-                        {
-                            "name": "?headers",
-                            "type": "table"
-                        },
-                        {
-                            "name": "?callback",
-                            "type": "function"
-                        }
-                    ],
-                    "description": "Sends a GET request. If callback is provided, this function is nonblocking and returns nil. If callback is not provided, this function yields and returns statusCode, body."
+                "metalness": {
+                    "hasSetter": true,
+                    "description": "",
+                    "type": "number",
+                    "hasGetter": true
                 },
-                "put": {
-                    "returns": [],
-                    "parameters": [
-                        {
-                            "name": "url",
-                            "type": "string"
-                        },
-                        {
-                            "name": "body",
-                            "type": "string"
-                        },
-                        {
-                            "name": "?headers",
-                            "type": "table"
-                        },
-                        {
-                            "name": "?callback",
-                            "type": "function"
-                        }
-                    ],
-                    "description": "Sends a PUT request. If callback is provided, this function is nonblocking and returns nil. If callback is not provided, this function yields and returns statusCode, body."
+                "joints": {
+                    "hasSetter": false,
+                    "description": "",
+                    "type": "table<joint>",
+                    "hasGetter": true
                 },
-                "delete": {
-                    "returns": [],
-                    "parameters": [
-                        {
-                            "name": "url",
-                            "type": "string"
-                        },
-                        {
-                            "name": "body",
-                            "type": "string"
-                        },
-                        {
-                            "name": "?headers",
-                            "type": "table"
-                        },
-                        {
-                            "name": "?callback",
-                            "type": "function"
-                        }
-                    ],
-                    "description": "Sends a DELETE request. If callback is provided, this function is nonblocking and returns nil. If callback is not provided, this function yields and returns statusCode, body."
+                "roughness": {
+                    "hasSetter": true,
+                    "description": "",
+                    "type": "number",
+                    "hasGetter": true
+                },
+                "animations": {
+                    "hasSetter": false,
+                    "description": "Get available animations for the loaded mesh.",
+                    "type": "table<string>",
+                    "hasGetter": true
+                },
+                "velocity": {
+                    "hasSetter": true,
+                    "description": "",
+                    "type": "vector3",
+                    "hasGetter": true
+                },
+                "simulated": {
+                    "hasSetter": true,
+                    "description": "When false, an object is no longer simulated and doesn't interact with other simulated objects",
+                    "type": "boolean",
+                    "hasGetter": true
                 }
             }
         },
@@ -1963,15 +932,6 @@
                         }
                     ],
                     "description": "Fired when the local user authenticates"
-                },
-                "updateProgress": {
-                    "parameters": [
-                        {
-                            "name": "percentage",
-                            "type": "string"
-                        }
-                    ],
-                    "description": "Fired when an update progresses"
                 },
                 "changed": {
                     "parameters": [
@@ -1998,40 +958,1397 @@
                         }
                     ],
                     "description": "Fired when an update begins"
-                }
-            },
-            "properties": {
-                "coreInterface": {
-                    "type": "interface",
-                    "hasGetter": true,
-                    "hasSetter": false,
-                    "description": "The core interface"
+                },
+                "updateProgress": {
+                    "parameters": [
+                        {
+                            "name": "percentage",
+                            "type": "string"
+                        }
+                    ],
+                    "description": "Fired when an update progresses"
                 }
             },
             "constructable": false,
-            "className": "engine",
             "methods": {
                 "openUrl": {
+                    "description": "DEPRECATED, USE core.process:openUrl INSTEAD",
                     "returns": [],
-                    "parameters": [],
-                    "description": "DEPRECATED, USE core.process:openUrl INSTEAD"
+                    "parameters": []
                 },
                 "getUserToken": {
+                    "description": "Returns the API token for the authenticated user",
                     "returns": [
                         "string"
                     ],
+                    "parameters": []
+                }
+            },
+            "className": "engine",
+            "properties": {
+                "coreInterface": {
+                    "hasSetter": false,
+                    "description": "The core interface",
+                    "type": "interface",
+                    "hasGetter": true
+                }
+            }
+        },
+        "tween": {
+            "events": [],
+            "constructable": false,
+            "methods": {
+                "create": {
+                    "description": "Creates a tween",
+                    "returns": [],
+                    "parameters": [
+                        {
+                            "name": "object",
+                            "type": "variant"
+                        },
+                        {
+                            "name": "duration",
+                            "type": "number"
+                        },
+                        {
+                            "name": "properties",
+                            "type": "table"
+                        },
+                        {
+                            "name": "easing",
+                            "type": "string"
+                        },
+                        {
+                            "name": "tweenCallback",
+                            "type": "function?"
+                        }
+                    ]
+                },
+                "begin": {
+                    "description": "Creates and starts a tween",
+                    "returns": [],
+                    "parameters": [
+                        {
+                            "name": "object",
+                            "type": "variant"
+                        },
+                        {
+                            "name": "duration",
+                            "type": "number"
+                        },
+                        {
+                            "name": "properties",
+                            "type": "table"
+                        },
+                        {
+                            "name": "easing",
+                            "type": "string"
+                        },
+                        {
+                            "name": "tweenCallback",
+                            "type": "function?"
+                        }
+                    ]
+                }
+            },
+            "className": "tween",
+            "properties": []
+        },
+        "objectBase": {
+            "events": [],
+            "constructable": false,
+            "methods": {
+                "destroy": {
+                    "description": "Destroys this object, further accessing this instance will error",
+                    "returns": [],
+                    "parameters": []
+                }
+            },
+            "className": "objectBase",
+            "properties": {
+                "name": {
+                    "hasSetter": true,
+                    "description": "",
+                    "type": "string",
+                    "hasGetter": true
+                },
+                "id": {
+                    "hasSetter": false,
+                    "description": "",
+                    "type": "number",
+                    "hasGetter": true
+                }
+            }
+        },
+        "http": {
+            "events": [],
+            "constructable": false,
+            "methods": {
+                "post": {
+                    "description": "Sends a POST request. If callback is provided, this function is nonblocking and returns nil. If callback is not provided, this function yields and returns statusCode, body.",
+                    "returns": [],
+                    "parameters": [
+                        {
+                            "name": "url",
+                            "type": "string"
+                        },
+                        {
+                            "name": "body",
+                            "type": "string"
+                        },
+                        {
+                            "name": "?headers",
+                            "type": "table"
+                        },
+                        {
+                            "name": "?callback",
+                            "type": "function"
+                        }
+                    ]
+                },
+                "delete": {
+                    "description": "Sends a DELETE request. If callback is provided, this function is nonblocking and returns nil. If callback is not provided, this function yields and returns statusCode, body.",
+                    "returns": [],
+                    "parameters": [
+                        {
+                            "name": "url",
+                            "type": "string"
+                        },
+                        {
+                            "name": "body",
+                            "type": "string"
+                        },
+                        {
+                            "name": "?headers",
+                            "type": "table"
+                        },
+                        {
+                            "name": "?callback",
+                            "type": "function"
+                        }
+                    ]
+                },
+                "put": {
+                    "description": "Sends a PUT request. If callback is provided, this function is nonblocking and returns nil. If callback is not provided, this function yields and returns statusCode, body.",
+                    "returns": [],
+                    "parameters": [
+                        {
+                            "name": "url",
+                            "type": "string"
+                        },
+                        {
+                            "name": "body",
+                            "type": "string"
+                        },
+                        {
+                            "name": "?headers",
+                            "type": "table"
+                        },
+                        {
+                            "name": "?callback",
+                            "type": "function"
+                        }
+                    ]
+                },
+                "get": {
+                    "description": "Sends a GET request. If callback is provided, this function is nonblocking and returns nil. If callback is not provided, this function yields and returns statusCode, body.",
+                    "returns": [],
+                    "parameters": [
+                        {
+                            "name": "url",
+                            "type": "string"
+                        },
+                        {
+                            "name": "?headers",
+                            "type": "table"
+                        },
+                        {
+                            "name": "?callback",
+                            "type": "function"
+                        }
+                    ]
+                }
+            },
+            "className": "http",
+            "properties": []
+        },
+        "guiImage": {
+            "events": [],
+            "constructable": true,
+            "extends": "guiFrame",
+            "methods": [],
+            "className": "guiImage",
+            "properties": {
+                "patternScaleValues": {
+                    "hasSetter": true,
+                    "description": "",
+                    "type": "boolean",
+                    "hasGetter": true
+                },
+                "imageColour": {
+                    "hasSetter": true,
+                    "description": "",
+                    "type": "colour",
+                    "hasGetter": true
+                },
+                "patternRotation": {
+                    "hasSetter": true,
+                    "description": "",
+                    "type": "float",
+                    "hasGetter": true
+                },
+                "image": {
+                    "hasSetter": true,
+                    "description": "",
+                    "type": "string",
+                    "hasGetter": true
+                },
+                "imageBottomRight": {
+                    "hasSetter": true,
+                    "description": "Defaults to {1, 1}, the bottom right corner of the image loaded. Decreasing this number leads to cropping, increasing will lead to repetition.",
+                    "type": "vector2",
+                    "hasGetter": true
+                },
+                "imageAlpha": {
+                    "hasSetter": true,
+                    "description": "An alpha value of 1.0 is completely visible, 0.0 is invisible.",
+                    "type": "number",
+                    "hasGetter": true
+                },
+                "imageTopLeft": {
+                    "hasSetter": true,
+                    "description": "",
+                    "type": "vector2",
+                    "hasGetter": true
+                }
+            }
+        },
+        "json": {
+            "events": [],
+            "constructable": false,
+            "methods": {
+                "decode": {
+                    "description": "",
+                    "returns": [
+                        "table"
+                    ],
+                    "parameters": [
+                        {
+                            "name": "json",
+                            "type": "string"
+                        }
+                    ]
+                },
+                "encodeWithTypes": {
+                    "description": "",
+                    "returns": [
+                        "string"
+                    ],
+                    "parameters": [
+                        {
+                            "name": "toEncode",
+                            "type": "variant"
+                        }
+                    ]
+                },
+                "encode": {
+                    "description": "",
+                    "returns": [
+                        "string"
+                    ],
+                    "parameters": [
+                        {
+                            "name": "toEncode",
+                            "type": "variant"
+                        }
+                    ]
+                }
+            },
+            "className": "json",
+            "properties": []
+        },
+        "debug": {
+            "events": {
+                "print": {
+                    "parameters": [
+                        {
+                            "name": "message",
+                            "type": "string"
+                        }
+                    ],
+                    "description": "Fired when a print occurs"
+                },
+                "changed": {
+                    "parameters": [
+                        {
+                            "name": "property",
+                            "type": "string"
+                        },
+                        {
+                            "name": "oldValue",
+                            "type": "variant"
+                        },
+                        {
+                            "name": "newValue",
+                            "type": "variant"
+                        }
+                    ],
+                    "description": "Fired when a property is changed."
+                },
+                "error": {
+                    "parameters": [
+                        {
+                            "name": "message",
+                            "type": "string"
+                        }
+                    ],
+                    "description": "Fired when a error occurs"
+                },
+                "warn": {
+                    "parameters": [
+                        {
+                            "name": "message",
+                            "type": "string"
+                        }
+                    ],
+                    "description": "Fired when a warn occurs"
+                }
+            },
+            "constructable": false,
+            "methods": {
+                "getOutputHistory": {
+                    "description": "Returns a table of dictionaries: {time, message, messageType}",
+                    "returns": [
+                        "table"
+                    ],
+                    "parameters": []
+                },
+                "schedulerUi": {
+                    "description": "Undocumented",
+                    "returns": [],
+                    "parameters": []
+                },
+                "clearOutputHistory": {
+                    "description": "Clears the output history",
+                    "returns": [],
+                    "parameters": []
+                },
+                "traceback": {
+                    "description": "Returns a string with a traceback of the stack call.",
+                    "returns": [
+                        "string"
+                    ],
+                    "parameters": []
+                }
+            },
+            "className": "debug",
+            "properties": []
+        },
+        "graphics": {
+            "events": [],
+            "constructable": false,
+            "methods": {
+                "getRenderers": {
+                    "description": "Returns the list of supported renderers on this client",
+                    "returns": [
+                        "table"
+                    ],
+                    "parameters": []
+                },
+                "setDebug": {
+                    "description": "Enable or disable debug mode",
+                    "returns": [],
+                    "parameters": [
+                        {
+                            "name": "debugMode",
+                            "type": "bool"
+                        }
+                    ]
+                },
+                "setRenderer": {
+                    "description": "Sets the renderer used by this client",
+                    "returns": [],
+                    "parameters": [
+                        {
+                            "name": "rendererName",
+                            "type": "string"
+                        }
+                    ]
+                }
+            },
+            "className": "graphics",
+            "properties": []
+        },
+        "scene": {
+            "events": [],
+            "constructable": false,
+            "methods": {
+                "child": {
+                    "description": "Returns nil if not found",
+                    "returns": [
+                        "sceneObject"
+                    ],
+                    "parameters": [
+                        {
+                            "name": "name",
+                            "type": "string"
+                        }
+                    ]
+                },
+                "raycastOne": {
+                    "description": "Returns an object, pos, normal or nil if there is no hit",
+                    "returns": [
+                        "sceneObject",
+                        " vector3",
+                        " vector3"
+                    ],
+                    "parameters": [
+                        {
+                            "name": "a",
+                            "type": "vector3"
+                        },
+                        {
+                            "name": "b",
+                            "type": "vector3"
+                        }
+                    ]
+                },
+                "destroyChildren": {
+                    "description": "Destroys all children",
+                    "returns": [],
+                    "parameters": []
+                },
+                "raycast": {
+                    "description": "Returns a table of dictionaries for each hit. Example dict: {hit=,position=,normal=}",
+                    "returns": [
+                        "table"
+                    ],
+                    "parameters": [
+                        {
+                            "name": "a",
+                            "type": "vector3"
+                        },
+                        {
+                            "name": "b",
+                            "type": "vector3"
+                        }
+                    ]
+                }
+            },
+            "className": "scene",
+            "properties": {
+                "camera": {
+                    "hasSetter": false,
+                    "type": "Undocumented",
+                    "hasGetter": true
+                },
+                "simulate": {
+                    "hasSetter": true,
+                    "description": "",
+                    "type": "boolean",
+                    "hasGetter": true
+                },
+                "children": {
+                    "hasSetter": false,
+                    "description": "",
+                    "type": "table",
+                    "hasGetter": true
+                },
+                "gravity": {
+                    "hasSetter": true,
+                    "description": "",
+                    "type": "vector3",
+                    "hasGetter": true
+                }
+            }
+        },
+        "workshop": {
+            "events": [],
+            "constructable": false,
+            "methods": {
+                "getAppFiles": {
+                    "description": "Returns a table of strings",
+                    "returns": [
+                        "table"
+                    ],
+                    "parameters": []
+                },
+                "readFile": {
+                    "description": "Returns the contents of the specified file in the app directory",
+                    "returns": [
+                        "string"
+                    ],
+                    "parameters": [
+                        {
+                            "name": "file",
+                            "type": "string"
+                        }
+                    ]
+                },
+                "writeFile": {
+                    "description": "Writes to the specified file in the app directory",
+                    "returns": [],
+                    "parameters": [
+                        {
+                            "name": "file",
+                            "type": "string"
+                        },
+                        {
+                            "name": "contents",
+                            "type": "string"
+                        }
+                    ]
+                },
+                "promptOpen": {
+                    "description": "Prompts the user to select their app directory.",
+                    "returns": [
+                        "boolean"
+                    ],
+                    "parameters": []
+                },
+                "openRecent": {
+                    "description": "Open a app directory returned by teverse.apps:recentDirectories",
+                    "returns": [
+                        "boolean"
+                    ],
+                    "parameters": [
+                        {
+                            "name": "path",
+                            "type": "string"
+                        }
+                    ]
+                }
+            },
+            "className": "workshop",
+            "properties": {
+                "appLocation": {
+                    "hasSetter": false,
+                    "description": "Absolute path to the app on the filesystem",
+                    "type": "string",
+                    "hasGetter": true
+                }
+            }
+        },
+        "guiFrame": {
+            "events": [],
+            "constructable": true,
+            "extends": "guiBase",
+            "methods": [],
+            "className": "guiFrame",
+            "properties": {
+                "dropShadowOffset": {
+                    "hasSetter": true,
+                    "description": "",
+                    "type": "vector2",
+                    "hasGetter": true
+                },
+                "position": {
+                    "hasSetter": true,
+                    "description": "Position relative to the parent element",
+                    "type": "guiCoord",
+                    "hasGetter": true
+                },
+                "strokeWidth": {
+                    "hasSetter": true,
+                    "description": "",
+                    "type": "number",
+                    "hasGetter": true
+                },
+                "absoluteSize": {
+                    "hasSetter": false,
+                    "description": "Absolute size in pixels",
+                    "type": "vector2",
+                    "hasGetter": true
+                },
+                "backgroundAlpha": {
+                    "hasSetter": true,
+                    "description": "An alpha value of 1.0 is completely visible, 0.0 is invisible.",
+                    "type": "number",
+                    "hasGetter": true
+                },
+                "strokeRadius": {
+                    "hasSetter": true,
+                    "description": "",
+                    "type": "number",
+                    "hasGetter": true
+                },
+                "backgroundColour": {
+                    "hasSetter": true,
+                    "description": "",
+                    "type": "colour",
+                    "hasGetter": true
+                },
+                "absolutePosition": {
+                    "hasSetter": false,
+                    "description": "Absolute position in pixels from the top left of the screen",
+                    "type": "vector2",
+                    "hasGetter": true
+                },
+                "dropShadowColour": {
+                    "hasSetter": true,
+                    "description": "",
+                    "type": "colour",
+                    "hasGetter": true
+                },
+                "size": {
+                    "hasSetter": true,
+                    "description": "Size relative to the parent element",
+                    "type": "guiCoord",
+                    "hasGetter": true
+                },
+                "dropShadowBlur": {
+                    "hasSetter": true,
+                    "description": "",
+                    "type": "number",
+                    "hasGetter": true
+                },
+                "strokeColour": {
+                    "hasSetter": true,
+                    "description": "",
+                    "type": "colour",
+                    "hasGetter": true
+                },
+                "dropShadowAlpha": {
+                    "hasSetter": true,
+                    "description": "",
+                    "type": "number",
+                    "hasGetter": true
+                },
+                "strokeAlpha": {
+                    "hasSetter": true,
+                    "description": "",
+                    "type": "number",
+                    "hasGetter": true
+                }
+            }
+        },
+        "guiLine": {
+            "events": [],
+            "constructable": true,
+            "extends": "guiBase",
+            "methods": [],
+            "className": "guiLine",
+            "properties": {
+                "pointA": {
+                    "hasSetter": true,
+                    "description": "Position of where the line starts relative to the parent element.",
+                    "type": "guiCoord",
+                    "hasGetter": true
+                },
+                "pointB": {
+                    "hasSetter": true,
+                    "description": "Position of where the line ends relative to the parent element.",
+                    "type": "guiCoord",
+                    "hasGetter": true
+                },
+                "lineCap": {
+                    "hasSetter": true,
+                    "description": "Determines how lines are capped",
+                    "type": "enums.lineCap",
+                    "hasGetter": true
+                },
+                "lineWidth": {
+                    "hasSetter": true,
+                    "description": "",
+                    "type": "number",
+                    "hasGetter": true
+                },
+                "lineAlpha": {
+                    "hasSetter": true,
+                    "description": "An alpha value of 1.0 is completely visible, 0.0 is invisible.",
+                    "type": "number",
+                    "hasGetter": true
+                },
+                "lineColour": {
+                    "hasSetter": true,
+                    "description": "",
+                    "type": "colour",
+                    "hasGetter": true
+                }
+            }
+        },
+        "reflection": {
+            "events": [],
+            "constructable": false,
+            "methods": {
+                "getClassReflection": {
+                    "description": "Returns a dictionary with information about a class. Returns nil if classname is invalid",
+                    "returns": [
+                        "table"
+                    ],
+                    "parameters": [
+                        {
+                            "name": "className",
+                            "type": "string"
+                        }
+                    ]
+                },
+                "getClasses": {
+                    "description": "Returns a table of class names",
+                    "returns": [
+                        "table"
+                    ],
+                    "parameters": []
+                }
+            },
+            "className": "reflection",
+            "properties": []
+        },
+        "audioEmitter": {
+            "events": [],
+            "constructable": true,
+            "extends": "sceneObject",
+            "methods": {
+                "pause": {
+                    "description": "Pauses a playing track",
+                    "returns": [],
+                    "parameters": []
+                },
+                "stop": {
+                    "description": "Stops a playing track",
+                    "returns": [],
+                    "parameters": []
+                },
+                "play": {
+                    "description": "Plays the loaded track",
+                    "returns": [],
+                    "parameters": []
+                }
+            },
+            "className": "audioEmitter",
+            "properties": {
+                "offset": {
+                    "hasSetter": true,
+                    "description": "The offset of the track in seconds",
+                    "type": "number",
+                    "hasGetter": true
+                },
+                "track": {
+                    "hasSetter": true,
+                    "description": "The loaded track",
+                    "type": "string",
+                    "hasGetter": true
+                },
+                "rolloffFactor": {
+                    "hasSetter": true,
+                    "description": "Rolloff rate for the source, default is 1.0",
+                    "type": "number",
+                    "hasGetter": true
+                },
+                "gain": {
+                    "hasSetter": true,
+                    "description": "Controls the loudness of the audio",
+                    "type": "number",
+                    "hasGetter": true
+                },
+                "pitch": {
+                    "hasSetter": true,
+                    "description": "",
+                    "type": "number",
+                    "hasGetter": true
+                },
+                "maxDistance": {
+                    "hasSetter": true,
+                    "description": "Audio will not be audible beyond this distance in 3D Space",
+                    "type": "number",
+                    "hasGetter": true
+                },
+                "loop": {
+                    "hasSetter": true,
+                    "description": "When true, the audio is repeated until manually stopped",
+                    "type": "boolean",
+                    "hasGetter": true
+                }
+            }
+        },
+        "guiTextBox": {
+            "events": {
+                "keyDown": {
+                    "parameters": [
+                        {
+                            "name": "keyCode",
+                            "type": "enums.keysym"
+                        }
+                    ],
+                    "description": "Key pressed"
+                },
+                "keyUp": {
+                    "parameters": [
+                        {
+                            "name": "keyCode",
+                            "type": "enums.keysym"
+                        }
+                    ],
+                    "description": "Key released"
+                }
+            },
+            "constructable": true,
+            "extends": "guiFrame",
+            "methods": {
+                "setFocus": {
+                    "description": "Focuses this element and allows keyboard input. Loads on-screen keyboard if the device is touch based.",
+                    "returns": [],
+                    "parameters": []
+                }
+            },
+            "className": "guiTextBox",
+            "properties": {
+                "textAlign": {
+                    "hasSetter": true,
+                    "description": "Determines the rendered text is aligned",
+                    "type": "enums.align",
+                    "hasGetter": true
+                },
+                "textSize": {
+                    "hasSetter": true,
+                    "description": "Size of the text rendered",
+                    "type": "number",
+                    "hasGetter": true
+                },
+                "textDimensions": {
+                    "hasSetter": false,
+                    "description": "Gets the bounds of the text",
+                    "type": "string",
+                    "hasGetter": true
+                },
+                "text": {
+                    "hasSetter": true,
+                    "description": "The text rendered",
+                    "type": "string",
+                    "hasGetter": true
+                },
+                "textEditable": {
+                    "hasSetter": true,
+                    "description": "When true, the user can input into this box",
+                    "type": "boolean",
+                    "hasGetter": true
+                },
+                "textMultiline": {
+                    "hasSetter": true,
+                    "description": "When true, user can input newline characters.",
+                    "type": "boolean",
+                    "hasGetter": true
+                },
+                "textFont": {
+                    "hasSetter": true,
+                    "description": "Determines the rendered text's font",
+                    "type": "string",
+                    "hasGetter": true
+                },
+                "textAlpha": {
+                    "hasSetter": true,
+                    "description": "0.0 makes the text fully transparent and invisible.",
+                    "type": "number",
+                    "hasGetter": true
+                },
+                "textColour": {
+                    "hasSetter": true,
+                    "description": "Colour of the text rendered",
+                    "type": "colour",
+                    "hasGetter": true
+                },
+                "textShadowColour": {
+                    "hasSetter": true,
+                    "description": "The text shadow colour, rendered as a blurred backing.",
+                    "type": "colour",
+                    "hasGetter": true
+                },
+                "textShadowSize": {
+                    "hasSetter": true,
+                    "description": "When 0, no shadow is rendered. Increasing this value will determine how much the shadow spreads.",
+                    "type": "number",
+                    "hasGetter": true
+                },
+                "textWrap": {
+                    "hasSetter": true,
+                    "description": "When true, text wraps onto a new line with new line characters.",
+                    "type": "boolean",
+                    "hasGetter": true
+                }
+            }
+        },
+        "guiLineBezier": {
+            "events": [],
+            "constructable": true,
+            "extends": "guiLine",
+            "methods": [],
+            "className": "guiLineBezier",
+            "properties": {
+                "controlB": {
+                    "hasSetter": true,
+                    "description": "Control position relative to the parent element",
+                    "type": "guiCoord",
+                    "hasGetter": true
+                },
+                "controlA": {
+                    "hasSetter": true,
+                    "description": "Control position relative to the parent element",
+                    "type": "guiCoord",
+                    "hasGetter": true
+                }
+            }
+        },
+        "guiGradientFrame": {
+            "events": [],
+            "constructable": true,
+            "extends": "guiFrame",
+            "methods": [],
+            "className": "guiGradientFrame",
+            "properties": {
+                "backgroundColourB": {
+                    "hasSetter": true,
+                    "description": "",
+                    "type": "colour",
+                    "hasGetter": true
+                },
+                "backgroundAlphaB": {
+                    "hasSetter": true,
+                    "description": "An alpha value of 1.0 is completely visible, 0.0 is invisible.",
+                    "type": "number",
+                    "hasGetter": true
+                },
+                "finish": {
+                    "hasSetter": true,
+                    "description": "Position where the gradient ends, relative to the top left corner of this element.",
+                    "type": "guiCoord",
+                    "hasGetter": true
+                },
+                "strokeColourB": {
+                    "hasSetter": true,
+                    "description": "",
+                    "type": "colour",
+                    "hasGetter": true
+                },
+                "strokeAlphaB": {
+                    "hasSetter": true,
+                    "description": "An alpha value of 1.0 is completely visible, 0.0 is invisible.",
+                    "type": "colour",
+                    "hasGetter": true
+                },
+                "start": {
+                    "hasSetter": true,
+                    "description": "Position where the gradient begins, relative to the top left corner of this element.",
+                    "type": "guiCoord",
+                    "hasGetter": true
+                }
+            }
+        },
+        "camera": {
+            "events": [],
+            "constructable": false,
+            "methods": {
+                "lookAt": {
+                    "description": "Points the camera towards the provided vector",
+                    "returns": [],
+                    "parameters": [
+                        {
+                            "name": "vector",
+                            "type": "vector3"
+                        }
+                    ]
+                },
+                "screenToWorld": {
+                    "description": "Returns a 3d vector",
+                    "returns": [
+                        "vector3"
+                    ],
+                    "parameters": [
+                        {
+                            "name": "screenPos",
+                            "type": "vector2"
+                        }
+                    ]
+                },
+                "worldToScreen": {
+                    "description": "Returns a 2d screen space vector and a number representing depth",
+                    "returns": [
+                        "vector2",
+                        " number"
+                    ],
+                    "parameters": [
+                        {
+                            "name": "wPos",
+                            "type": "vector3"
+                        }
+                    ]
+                }
+            },
+            "className": "camera",
+            "properties": {
+                "fov": {
+                    "hasSetter": true,
+                    "description": "field of view",
+                    "type": "number",
+                    "hasGetter": true
+                },
+                "rotation": {
+                    "hasSetter": true,
+                    "description": "",
+                    "type": "quaternion",
+                    "hasGetter": true
+                },
+                "position": {
+                    "hasSetter": true,
+                    "description": "",
+                    "type": "vector3",
+                    "hasGetter": true
+                }
+            }
+        },
+        "guiScrollView": {
+            "events": [],
+            "constructable": true,
+            "extends": "guiFrame",
+            "methods": [],
+            "className": "guiScrollView",
+            "properties": {
+                "scrollbarAlpha": {
+                    "hasSetter": true,
+                    "description": "",
+                    "type": "number",
+                    "hasGetter": true
+                },
+                "canvasOffset": {
+                    "hasSetter": true,
+                    "description": "",
+                    "type": "vector2",
+                    "hasGetter": true
+                },
+                "scrollbarWidth": {
+                    "hasSetter": true,
+                    "description": "",
+                    "type": "number",
+                    "hasGetter": true
+                },
+                "scrollbarRadius": {
+                    "hasSetter": true,
+                    "description": "",
+                    "type": "number",
+                    "hasGetter": true
+                },
+                "scrollbarColour": {
+                    "hasSetter": true,
+                    "description": "",
+                    "type": "colour",
+                    "hasGetter": true
+                },
+                "canvasSize": {
+                    "hasSetter": true,
+                    "description": "If bigger than 1,0,1,0, scrollvars will be visible",
+                    "type": "guiCoord",
+                    "hasGetter": true
+                }
+            }
+        },
+        "client": {
+            "events": [],
+            "constructable": false,
+            "methods": [],
+            "className": "client",
+            "properties": {
+                "beta": {
+                    "hasSetter": false,
+                    "description": "True if this account has beta privelages",
+                    "type": "boolean",
+                    "hasGetter": true
+                },
+                "membership": {
+                    "hasSetter": false,
+                    "description": "",
+                    "type": "number",
+                    "hasGetter": true
+                },
+                "name": {
+                    "hasSetter": false,
+                    "description": "Unique name for this user",
+                    "type": "string",
+                    "hasGetter": true
+                },
+                "id": {
+                    "hasSetter": false,
+                    "description": "Unique GUID for this user",
+                    "type": "string",
+                    "hasGetter": true
+                }
+            }
+        },
+        "datastore": {
+            "events": [],
+            "constructable": false,
+            "methods": {
+                "get": {
+                    "description": "Returns a value for the corresponding key",
+                    "returns": [
+                        "string"
+                    ],
+                    "parameters": [
+                        {
+                            "name": "key",
+                            "type": "string"
+                        }
+                    ]
+                },
+                "delete": {
+                    "description": "Returns true if successful",
+                    "returns": [
+                        "boolean"
+                    ],
+                    "parameters": [
+                        {
+                            "name": "key",
+                            "type": "string"
+                        }
+                    ]
+                },
+                "put": {
+                    "description": "Returns true if successful",
+                    "returns": [
+                        "boolean"
+                    ],
+                    "parameters": [
+                        {
+                            "name": "key",
+                            "type": "string"
+                        },
+                        {
+                            "name": "value",
+                            "type": "string"
+                        }
+                    ]
+                },
+                "list": {
+                    "description": "Returns a table of keys or nil on failure.",
+                    "returns": [
+                        "table"
+                    ],
+                    "parameters": []
+                }
+            },
+            "className": "datastore",
+            "properties": []
+        },
+        "networking": {
+            "events": {
+                "_clientConnected": {
+                    "parameters": [
+                        {
+                            "name": "user",
+                            "type": "client"
+                        }
+                    ],
+                    "description": "Fired when a user connects"
+                },
+                "_disconnected": {
                     "parameters": [],
-                    "description": "Returns the API token for the authenticated user"
+                    "description": "Fired when a connection fails or stops"
+                },
+                "_connected": {
+                    "parameters": [],
+                    "description": "Fired when a connection has started"
+                },
+                "changed": {
+                    "parameters": [
+                        {
+                            "name": "property",
+                            "type": "string"
+                        },
+                        {
+                            "name": "oldValue",
+                            "type": "variant"
+                        },
+                        {
+                            "name": "newValue",
+                            "type": "variant"
+                        }
+                    ],
+                    "description": "Fired when a property is changed."
+                },
+                "_clientDisconnected": {
+                    "parameters": [
+                        {
+                            "name": "user",
+                            "type": "client"
+                        }
+                    ],
+                    "description": "Fired when a user disconnects"
+                }
+            },
+            "constructable": false,
+            "methods": {
+                "sendToServer": {
+                    "description": "This is an alias for broadcast that only works on the client side.",
+                    "returns": [],
+                    "parameters": [
+                        {
+                            "name": "eventName",
+                            "type": "string"
+                        },
+                        {
+                            "type": "..."
+                        }
+                    ]
+                },
+                "getClient": {
+                    "description": "Returns the client for the matching name or id you provide",
+                    "returns": [
+                        "client"
+                    ],
+                    "parameters": [
+                        {
+                            "name": "nameOrClientId",
+                            "type": "string"
+                        }
+                    ]
+                },
+                "getStats": {
+                    "description": "Internal use",
+                    "returns": [
+                        "netStats"
+                    ],
+                    "parameters": []
+                },
+                "broadcast": {
+                    "description": "Reliably sends the information you pass to all direct connections. Note that a client cannot broadcast to other clients as they are not directly connected.",
+                    "returns": [],
+                    "parameters": [
+                        {
+                            "name": "eventName",
+                            "type": "string"
+                        },
+                        {
+                            "type": "..."
+                        }
+                    ]
+                },
+                "initiate": {
+                    "description": "Initiate a networked app",
+                    "returns": [],
+                    "parameters": [
+                        {
+                            "name": "appId",
+                            "type": "string"
+                        }
+                    ]
+                },
+                "sendToClient": {
+                    "description": "[SERVER ONLY] Reliably sends the information you pass",
+                    "returns": [],
+                    "parameters": [
+                        {
+                            "name": "client",
+                            "type": "client"
+                        },
+                        {
+                            "name": "eventName",
+                            "type": "string"
+                        },
+                        {
+                            "type": "..."
+                        }
+                    ]
+                }
+            },
+            "className": "networking",
+            "properties": {
+                "localClient": {
+                    "hasSetter": false,
+                    "description": "The current local client, nil when unauthenticated",
+                    "type": "client",
+                    "hasGetter": true
+                },
+                "isConnected": {
+                    "hasSetter": false,
+                    "description": "True when a connection is established",
+                    "type": "boolean",
+                    "hasGetter": true
+                },
+                "clients": {
+                    "hasSetter": false,
+                    "description": "A readonly list of clients, excluding local client when offline",
+                    "type": "table",
+                    "hasGetter": true
+                }
+            }
+        },
+        "process": {
+            "events": [],
+            "constructable": false,
+            "methods": {
+                "openUrl": {
+                    "description": "Opens the provided URL in the user's browser",
+                    "returns": [],
+                    "parameters": []
+                }
+            },
+            "className": "process",
+            "properties": []
+        },
+        "dev": {
+            "events": [],
+            "constructable": false,
+            "methods": {
+                "stopWebSocket": {
+                    "description": "Stops the websocket server",
+                    "returns": [],
+                    "parameters": []
+                },
+                "reloadAllShaders": {
+                    "description": "Reloads all shaders.",
+                    "returns": [],
+                    "parameters": []
+                },
+                "startWebSocket": {
+                    "description": "Starts the websocket server on the default port",
+                    "returns": [],
+                    "parameters": []
+                },
+                "promptDevGit": {
+                    "description": "Prompts the user to select a directory for DevGit.",
+                    "returns": [],
+                    "parameters": []
+                },
+                "getWebSocketStatus": {
+                    "description": "Returns true if the websocket is running",
+                    "returns": [
+                        "boolean"
+                    ],
+                    "parameters": []
+                }
+            },
+            "className": "dev",
+            "properties": {
+                "localTevGit": {
+                    "hasSetter": false,
+                    "description": "Deprecated",
+                    "type": "string",
+                    "hasGetter": true
+                },
+                "localDevGitPath": {
+                    "hasSetter": false,
+                    "description": "Returns path to the local devgit",
+                    "type": "string",
+                    "hasGetter": true
+                },
+                "interface": {
+                    "hasSetter": false,
+                    "description": "Workshop level interface, renders above the core.interface singleton",
+                    "type": "interface",
+                    "hasGetter": true
+                },
+                "localDevGitEnabled": {
+                    "hasSetter": false,
+                    "description": "Returns true if a local tevgit has been set.",
+                    "type": "string",
+                    "hasGetter": true
                 }
             }
         },
         "base64": {
             "events": [],
-            "properties": [],
             "constructable": false,
-            "className": "base64",
             "methods": {
                 "decode": {
+                    "description": "",
                     "returns": [
                         "string"
                     ],
@@ -2040,10 +2357,10 @@
                             "name": "base64",
                             "type": "string"
                         }
-                    ],
-                    "description": ""
+                    ]
                 },
                 "encode": {
+                    "description": "",
                     "returns": [
                         "string"
                     ],
@@ -2052,72 +2369,14 @@
                             "name": "toEncode",
                             "type": "string"
                         }
-                    ],
-                    "description": ""
-                }
-            }
-        },
-        "guiImage": {
-            "events": [],
-            "properties": {
-                "image": {
-                    "type": "string",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": ""
-                },
-                "patternScaleValues": {
-                    "type": "boolean",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": ""
-                },
-                "patternRotation": {
-                    "type": "float",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": ""
-                },
-                "imageTopLeft": {
-                    "type": "vector2",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": ""
-                },
-                "imageColour": {
-                    "type": "colour",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": ""
-                },
-                "imageBottomRight": {
-                    "type": "vector2",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": "Defaults to {1, 1}, the bottom right corner of the image loaded. Decreasing this number leads to cropping, increasing will lead to repetition."
-                },
-                "imageAlpha": {
-                    "type": "number",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": "An alpha value of 1.0 is completely visible, 0.0 is invisible."
+                    ]
                 }
             },
-            "extends": "guiFrame",
-            "constructable": true,
-            "className": "guiImage",
-            "methods": []
+            "className": "base64",
+            "properties": []
         },
         "guiBase": {
             "events": {
-                "unfocused": {
-                    "parameters": [],
-                    "description": "Fired when the user looses focus on an element"
-                },
-                "focused": {
-                    "parameters": [],
-                    "description": "Fired when the user clicks onto an element and is ready to start inputting text"
-                },
                 "mouseLeftDown": {
                     "parameters": [
                         {
@@ -2145,14 +2404,9 @@
                     ],
                     "description": "Mouse wheeled"
                 },
-                "fingerDown": {
-                    "parameters": [
-                        {
-                            "name": "fingerPosition",
-                            "type": "vector2"
-                        }
-                    ],
-                    "description": "finger down"
+                "unfocused": {
+                    "parameters": [],
+                    "description": "Fired when the user looses focus on an element"
                 },
                 "fingerUp": {
                     "parameters": [
@@ -2163,6 +2417,14 @@
                     ],
                     "description": "finger up"
                 },
+                "focused": {
+                    "parameters": [],
+                    "description": "Fired when the user clicks onto an element and is ready to start inputting text"
+                },
+                "mouseExit": {
+                    "parameters": [],
+                    "description": "Mouse is no longer hovering"
+                },
                 "childAdded": {
                     "parameters": [
                         {
@@ -2172,14 +2434,9 @@
                     ],
                     "description": "Triggered when the viewport size is changed"
                 },
-                "childRemoved": {
-                    "parameters": [
-                        {
-                            "name": "newChild",
-                            "type": "guiBase"
-                        }
-                    ],
-                    "description": "Triggered when a child is added"
+                "mouseEnter": {
+                    "parameters": [],
+                    "description": "Mouse is hovering over this element"
                 },
                 "changed": {
                     "parameters": [
@@ -2243,64 +2500,30 @@
                     ],
                     "description": "Middle mouse button up"
                 },
-                "mouseExit": {
-                    "parameters": [],
-                    "description": "Mouse is no longer hovering"
+                "childRemoved": {
+                    "parameters": [
+                        {
+                            "name": "newChild",
+                            "type": "guiBase"
+                        }
+                    ],
+                    "description": "Triggered when a child is added"
                 },
-                "mouseEnter": {
-                    "parameters": [],
-                    "description": "Mouse is hovering over this element"
+                "fingerDown": {
+                    "parameters": [
+                        {
+                            "name": "fingerPosition",
+                            "type": "vector2"
+                        }
+                    ],
+                    "description": "finger down"
                 }
             },
-            "properties": {
-                "zIndex": {
-                    "type": "number",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": "Increasing the zIndex will render this element above others. Currently a signed 16 bit integer."
-                },
-                "visible": {
-                    "type": "boolean",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": ""
-                },
-                "clip": {
-                    "type": "boolean",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": "When true, children are cropped to fit"
-                },
-                "parent": {
-                    "type": "guiBase",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": "Parent of a guiBase must be another gui element"
-                },
-                "children": {
-                    "type": "table",
-                    "hasGetter": true,
-                    "hasSetter": false,
-                    "description": ""
-                },
-                "active": {
-                    "type": "boolean",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": "When true, this element can capture the mouse's hover"
-                },
-                "rotation": {
-                    "type": "number",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": ""
-                }
-            },
-            "extends": "objectBase",
             "constructable": false,
-            "className": "guiBase",
+            "extends": "objectBase",
             "methods": {
                 "child": {
+                    "description": "Returns nil if not found",
                     "returns": [
                         "guiBase"
                     ],
@@ -2309,100 +2532,122 @@
                             "name": "name",
                             "type": "string"
                         }
-                    ],
-                    "description": "Returns nil if not found"
+                    ]
                 },
                 "destroyChildren": {
+                    "description": "Destroys all children",
                     "returns": [],
-                    "parameters": [],
-                    "description": "Destroys all children"
+                    "parameters": []
+                }
+            },
+            "className": "guiBase",
+            "properties": {
+                "active": {
+                    "hasSetter": true,
+                    "description": "When true, this element can capture the mouse's hover",
+                    "type": "boolean",
+                    "hasGetter": true
+                },
+                "visible": {
+                    "hasSetter": true,
+                    "description": "",
+                    "type": "boolean",
+                    "hasGetter": true
+                },
+                "rotation": {
+                    "hasSetter": true,
+                    "description": "",
+                    "type": "number",
+                    "hasGetter": true
+                },
+                "children": {
+                    "hasSetter": false,
+                    "description": "",
+                    "type": "table",
+                    "hasGetter": true
+                },
+                "clip": {
+                    "hasSetter": true,
+                    "description": "When true, children are cropped to fit",
+                    "type": "boolean",
+                    "hasGetter": true
+                },
+                "zIndex": {
+                    "hasSetter": true,
+                    "description": "Increasing the zIndex will render this element above others. Currently a signed 16 bit integer.",
+                    "type": "number",
+                    "hasGetter": true
+                },
+                "parent": {
+                    "hasSetter": true,
+                    "description": "Parent of a guiBase must be another gui element",
+                    "type": "guiBase",
+                    "hasGetter": true
                 }
             }
         },
-        "audioEmitter": {
+        "light": {
             "events": [],
-            "properties": {
-                "gain": {
-                    "type": "number",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": "Controls the loudness of the audio"
-                },
-                "offset": {
-                    "type": "number",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": "The offset of the track in seconds"
-                },
-                "track": {
-                    "type": "string",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": "The loaded track"
-                },
-                "maxDistance": {
-                    "type": "number",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": "Audio will not be audible beyond this distance in 3D Space"
-                },
-                "rolloffFactor": {
-                    "type": "number",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": "Rolloff rate for the source, default is 1.0"
-                },
-                "loop": {
-                    "type": "boolean",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": "When true, the audio is repeated until manually stopped"
-                },
-                "pitch": {
-                    "type": "number",
-                    "hasGetter": true,
-                    "hasSetter": true,
-                    "description": ""
-                }
-            },
+            "constructable": false,
             "extends": "sceneObject",
-            "constructable": true,
-            "className": "audioEmitter",
-            "methods": {
-                "stop": {
-                    "returns": [],
-                    "parameters": [],
-                    "description": "Stops a playing track"
-                },
-                "pause": {
-                    "returns": [],
-                    "parameters": [],
-                    "description": "Pauses a playing track"
-                },
-                "play": {
-                    "returns": [],
-                    "parameters": [],
-                    "description": "Plays the loaded track"
+            "methods": [],
+            "className": "light",
+            "properties": {
+                "colour": {
+                    "hasSetter": true,
+                    "description": "",
+                    "type": "colour",
+                    "hasGetter": true
                 }
             }
+        },
+        "directionalLight": {
+            "events": [],
+            "constructable": true,
+            "extends": "light",
+            "methods": [],
+            "className": "directionalLight",
+            "properties": []
         },
         "input": {
             "events": {
+                "screenResized": {
+                    "parameters": [],
+                    "description": "Triggered when the viewport size is changed"
+                },
                 "mouseRightDown": {
                     "parameters": [],
                     "description": "Right mouse button down"
                 },
-                "mouseRightUp": {
-                    "parameters": [],
-                    "description": "Right mouse button up"
-                },
-                "mouseMiddleDown": {
-                    "parameters": [],
-                    "description": "Middle mouse button down"
-                },
                 "mouseMiddleUp": {
                     "parameters": [],
                     "description": "Middle mouse button up"
+                },
+                "changed": {
+                    "parameters": [
+                        {
+                            "name": "property",
+                            "type": "string"
+                        },
+                        {
+                            "name": "oldValue",
+                            "type": "variant"
+                        },
+                        {
+                            "name": "newValue",
+                            "type": "variant"
+                        }
+                    ],
+                    "description": "Fired when a property is changed."
+                },
+                "keyDown": {
+                    "parameters": [
+                        {
+                            "name": "keyCode",
+                            "type": "enums.keysym"
+                        }
+                    ],
+                    "description": "Key pressed"
                 },
                 "keyUp": {
                     "parameters": [
@@ -2412,6 +2657,22 @@
                         }
                     ],
                     "description": "Key released"
+                },
+                "mouseRightUp": {
+                    "parameters": [],
+                    "description": "Right mouse button up"
+                },
+                "mouseMiddleDown": {
+                    "parameters": [],
+                    "description": "Middle mouse button down"
+                },
+                "mouseMoved": {
+                    "parameters": [],
+                    "description": "Mouse moved"
+                },
+                "mouseLeftDown": {
+                    "parameters": [],
+                    "description": "Left mouse button down"
                 },
                 "mouseLeftUp": {
                     "parameters": [],
@@ -2428,112 +2689,12 @@
                 "fingerUp": {
                     "parameters": [],
                     "description": "finger up"
-                },
-                "screenResized": {
-                    "parameters": [],
-                    "description": "Triggered when the viewport size is changed"
-                },
-                "keyDown": {
-                    "parameters": [
-                        {
-                            "name": "keyCode",
-                            "type": "enums.keysym"
-                        }
-                    ],
-                    "description": "Key pressed"
-                },
-                "mouseLeftDown": {
-                    "parameters": [],
-                    "description": "Left mouse button down"
-                },
-                "changed": {
-                    "parameters": [
-                        {
-                            "name": "property",
-                            "type": "string"
-                        },
-                        {
-                            "name": "oldValue",
-                            "type": "variant"
-                        },
-                        {
-                            "name": "newValue",
-                            "type": "variant"
-                        }
-                    ],
-                    "description": "Fired when a property is changed."
-                },
-                "mouseMoved": {
-                    "parameters": [],
-                    "description": "Mouse moved"
-                }
-            },
-            "properties": {
-                "hasScreenKeyboard": {
-                    "type": "boolean",
-                    "hasGetter": true,
-                    "hasSetter": false,
-                    "description": "True if the device has a screen keyboard"
-                },
-                "screenSize": {
-                    "type": "vector2",
-                    "hasGetter": true,
-                    "hasSetter": false,
-                    "description": "Absolute size of the viewport measured in pixels"
-                },
-                "hasTouchInput": {
-                    "type": "boolean",
-                    "hasGetter": true,
-                    "hasSetter": false,
-                    "description": "True if the device has touch input"
-                },
-                "mousePosition": {
-                    "type": "vector2",
-                    "hasGetter": true,
-                    "hasSetter": false,
-                    "description": "Absolute position of cursor in pixels"
-                },
-                "screenPaddingLeft": {
-                    "type": "number",
-                    "hasGetter": true,
-                    "hasSetter": false,
-                    "description": "Padding applied to the left of the viewport by Teverse."
-                },
-                "screenPaddingBottom": {
-                    "type": "number",
-                    "hasGetter": true,
-                    "hasSetter": false,
-                    "description": "Padding applied to the bottom of the viewport by Teverse."
-                },
-                "screenPaddingRight": {
-                    "type": "number",
-                    "hasGetter": true,
-                    "hasSetter": false,
-                    "description": "Padding applied to the right of the viewport by Teverse."
-                },
-                "screenPaddingTop": {
-                    "type": "number",
-                    "hasGetter": true,
-                    "hasSetter": false,
-                    "description": "Padding applied to the top of the viewport by Teverse. Mostly on devices with notches."
                 }
             },
             "constructable": false,
-            "className": "input",
             "methods": {
-                "isKeyDown": {
-                    "returns": [
-                        "boolean"
-                    ],
-                    "parameters": [
-                        {
-                            "name": "code",
-                            "type": "keyCode"
-                        }
-                    ],
-                    "description": "Returns true if the provided key is down"
-                },
                 "isMouseButtonDown": {
+                    "description": "Returns true if the provided button is down, where code is 1, 2 or 3",
                     "returns": [
                         "boolean"
                     ],
@@ -2542,188 +2703,181 @@
                             "name": "code",
                             "type": "number"
                         }
-                    ],
-                    "description": "Returns true if the provided button is down, where code is 1, 2 or 3"
-                }
-            }
-        },
-        "apps": {
-            "events": {
-                "changed": {
-                    "parameters": [
-                        {
-                            "name": "property",
-                            "type": "string"
-                        },
-                        {
-                            "name": "oldValue",
-                            "type": "variant"
-                        },
-                        {
-                            "name": "newValue",
-                            "type": "variant"
-                        }
-                    ],
-                    "description": "Fired when a property is changed."
+                    ]
                 },
-                "download": {
+                "isKeyDown": {
+                    "description": "Returns true if the provided key is down",
+                    "returns": [
+                        "boolean"
+                    ],
                     "parameters": [
                         {
-                            "name": "success",
-                            "type": "boolean"
-                        },
-                        {
-                            "name": "message",
-                            "type": "string"
+                            "name": "code",
+                            "type": "keyCode"
                         }
-                    ],
-                    "description": "Fired when an download fails or succeeds"
-                },
-                "upload": {
-                    "parameters": [
-                        {
-                            "name": "success",
-                            "type": "boolean"
-                        },
-                        {
-                            "name": "app",
-                            "type": "table"
-                        }
-                    ],
-                    "description": "Fired when an upload fails or succeeds"
+                    ]
                 }
             },
-            "properties": [],
-            "constructable": false,
-            "className": "apps",
-            "methods": {
-                "promptApp": {
-                    "returns": [
-                        "boolean"
-                    ],
-                    "parameters": [],
-                    "description": "Prompts the user to select a .deviap file"
+            "className": "input",
+            "properties": {
+                "screenPaddingBottom": {
+                    "hasSetter": false,
+                    "description": "Padding applied to the bottom of the viewport by Teverse.",
+                    "type": "number",
+                    "hasGetter": true
                 },
-                "loadWorkshop": {
-                    "returns": [],
-                    "parameters": [],
-                    "description": "Resets the environment and loads the default Workshop app"
+                "hasTouchInput": {
+                    "hasSetter": false,
+                    "description": "True if the device has touch input",
+                    "type": "boolean",
+                    "hasGetter": true
                 },
-                "loadDashboard": {
-                    "returns": [],
-                    "parameters": [],
-                    "description": "Resets the environment and loads the default Dashboard app"
+                "screenPaddingLeft": {
+                    "hasSetter": false,
+                    "description": "Padding applied to the left of the viewport by Teverse.",
+                    "type": "number",
+                    "hasGetter": true
                 },
-                "loadRemote": {
-                    "returns": [],
-                    "parameters": [],
-                    "description": "Loads a remote app based on guid"
+                "screenSize": {
+                    "hasSetter": false,
+                    "description": "Absolute size of the viewport measured in pixels",
+                    "type": "vector2",
+                    "hasGetter": true
                 },
-                "reset": {
-                    "returns": [],
-                    "parameters": [],
-                    "description": "Resets the environment"
+                "screenPaddingRight": {
+                    "hasSetter": false,
+                    "description": "Padding applied to the right of the viewport by Teverse.",
+                    "type": "number",
+                    "hasGetter": true
                 },
-                "upload": {
-                    "returns": [],
-                    "parameters": [],
-                    "description": "Starts uploading the currently loaded UNPACKAGED app"
+                "hasScreenKeyboard": {
+                    "hasSetter": false,
+                    "description": "True if the device has a screen keyboard",
+                    "type": "boolean",
+                    "hasGetter": true
                 },
-                "reload": {
-                    "returns": [],
-                    "parameters": [],
-                    "description": "Resets the environment and reloads the loaded app"
+                "screenPaddingTop": {
+                    "hasSetter": false,
+                    "description": "Padding applied to the top of the viewport by Teverse. Mostly on devices with notches.",
+                    "type": "number",
+                    "hasGetter": true
                 },
-                "recentDirectories": {
-                    "returns": [
-                        "table"
-                    ],
-                    "parameters": [],
-                    "description": "Returns a table of strings"
-                },
-                "runRecent": {
-                    "returns": [
-                        "boolean"
-                    ],
-                    "parameters": [
-                        {
-                            "name": "path",
-                            "type": "string"
-                        }
-                    ],
-                    "description": "Run a app directory returned by recentDirectories"
-                },
-                "test": {
-                    "returns": [],
-                    "parameters": [],
-                    "description": "Uploads the unpackaged app and spins up a temporary test server on our cloud"
-                },
-                "promptAppDirectory": {
-                    "returns": [
-                        "boolean"
-                    ],
-                    "parameters": [],
-                    "description": "Prompts the user to select a directory containing the manifest.json file"
+                "mousePosition": {
+                    "hasSetter": false,
+                    "description": "Absolute position of cursor in pixels",
+                    "type": "vector2",
+                    "hasGetter": true
                 }
             }
         },
-        "graphics": {
+        "sceneObject": {
             "events": [],
-            "properties": [],
             "constructable": false,
-            "className": "graphics",
+            "extends": "objectBase",
             "methods": {
-                "setRenderer": {
+                "lookAt": {
+                    "description": "Points the sceneObject towards the provided vector",
                     "returns": [],
                     "parameters": [
                         {
-                            "name": "rendererName",
-                            "type": "string"
+                            "name": "vector",
+                            "type": "vector3"
                         }
-                    ],
-                    "description": "Sets the renderer used by this client"
+                    ]
+                }
+            },
+            "className": "sceneObject",
+            "properties": {
+                "absoluteRotation": {
+                    "hasSetter": false,
+                    "description": "",
+                    "type": "quaternion",
+                    "hasGetter": true
                 },
-                "setDebug": {
-                    "returns": [],
-                    "parameters": [
-                        {
-                            "name": "debugMode",
-                            "type": "bool"
-                        }
-                    ],
-                    "description": "Enable or disable debug mode"
+                "absolutePosition": {
+                    "hasSetter": false,
+                    "description": "",
+                    "type": "vector3",
+                    "hasGetter": true
                 },
-                "getRenderers": {
-                    "returns": [
-                        "table"
-                    ],
-                    "parameters": [],
-                    "description": "Returns the list of supported renderers on this client"
+                "rotation": {
+                    "hasSetter": true,
+                    "description": "",
+                    "type": "quaternion",
+                    "hasGetter": true
+                },
+                "parent": {
+                    "hasSetter": true,
+                    "description": "",
+                    "type": "sceneObject",
+                    "hasGetter": true
+                },
+                "position": {
+                    "hasSetter": true,
+                    "description": "",
+                    "type": "vector3",
+                    "hasGetter": true
                 }
             }
         },
-        "datastore": {
+        "guiIcon": {
             "events": [],
-            "properties": [],
-            "constructable": false,
-            "className": "datastore",
-            "methods": {
-                "delete": {
-                    "returns": [
-                        "boolean"
-                    ],
-                    "parameters": [
-                        {
-                            "name": "key",
-                            "type": "string"
-                        }
-                    ],
-                    "description": "Returns true if successful"
+            "constructable": true,
+            "extends": "guiFrame",
+            "methods": [],
+            "className": "guiIcon",
+            "properties": {
+                "shadowSize": {
+                    "hasSetter": true,
+                    "description": "",
+                    "type": "number",
+                    "hasGetter": true
                 },
-                "put": {
-                    "returns": [
-                        "boolean"
-                    ],
+                "iconAlpha": {
+                    "hasSetter": true,
+                    "description": "",
+                    "type": "number",
+                    "hasGetter": true
+                },
+                "iconType": {
+                    "hasSetter": true,
+                    "description": "",
+                    "type": "enums.iconType",
+                    "hasGetter": true
+                },
+                "iconColour": {
+                    "hasSetter": true,
+                    "description": "",
+                    "type": "colour",
+                    "hasGetter": true
+                },
+                "iconMax": {
+                    "hasSetter": true,
+                    "description": "",
+                    "type": "number",
+                    "hasGetter": true
+                },
+                "shadowColour": {
+                    "hasSetter": true,
+                    "description": "",
+                    "type": "colour",
+                    "hasGetter": true
+                },
+                "iconId": {
+                    "hasSetter": true,
+                    "description": "",
+                    "type": "string",
+                    "hasGetter": true
+                }
+            }
+        },
+        "settings": {
+            "events": [],
+            "constructable": false,
+            "methods": {
+                "set": {
+                    "description": "provided value should be a string for defined signal",
+                    "returns": [],
                     "parameters": [
                         {
                             "name": "key",
@@ -2733,17 +2887,17 @@
                             "name": "value",
                             "type": "string"
                         }
-                    ],
-                    "description": "Returns true if successful"
+                    ]
                 },
-                "list": {
+                "all": {
+                    "description": "Returns a table of all the settings persisted",
                     "returns": [
                         "table"
                     ],
-                    "parameters": [],
-                    "description": "Returns a table of keys or nil on failure."
+                    "parameters": []
                 },
                 "get": {
+                    "description": "returns a string from the persisted settings with the given key",
                     "returns": [
                         "string"
                     ],
@@ -2752,198 +2906,48 @@
                             "name": "key",
                             "type": "string"
                         }
-                    ],
-                    "description": "Returns a value for the corresponding key"
-                }
-            }
-        },
-        "networking": {
-            "events": {
-                "_clientConnected": {
-                    "parameters": [
-                        {
-                            "name": "user",
-                            "type": "client"
-                        }
-                    ],
-                    "description": "Fired when a user connects"
-                },
-                "_disconnected": {
-                    "parameters": [],
-                    "description": "Fired when a connection fails or stops"
-                },
-                "changed": {
-                    "parameters": [
-                        {
-                            "name": "property",
-                            "type": "string"
-                        },
-                        {
-                            "name": "oldValue",
-                            "type": "variant"
-                        },
-                        {
-                            "name": "newValue",
-                            "type": "variant"
-                        }
-                    ],
-                    "description": "Fired when a property is changed."
-                },
-                "_connected": {
-                    "parameters": [],
-                    "description": "Fired when a connection has started"
-                },
-                "_clientDisconnected": {
-                    "parameters": [
-                        {
-                            "name": "user",
-                            "type": "client"
-                        }
-                    ],
-                    "description": "Fired when a user disconnects"
+                    ]
                 }
             },
+            "className": "settings",
+            "properties": []
+        },
+        "joint": {
+            "events": [],
+            "constructable": false,
+            "methods": [],
+            "className": "joint",
             "properties": {
-                "clients": {
-                    "type": "table",
-                    "hasGetter": true,
+                "rotation": {
+                    "hasSetter": true,
+                    "description": "",
+                    "type": "quaternion",
+                    "hasGetter": true
+                },
+                "position": {
+                    "hasSetter": true,
+                    "description": "",
+                    "type": "vector3",
+                    "hasGetter": true
+                },
+                "name": {
                     "hasSetter": false,
-                    "description": "A readonly list of clients, excluding local client when offline"
+                    "description": "",
+                    "type": "string",
+                    "hasGetter": true
                 },
-                "isConnected": {
-                    "type": "boolean",
-                    "hasGetter": true,
-                    "hasSetter": false,
-                    "description": "True when a connection is established"
-                },
-                "localClient": {
-                    "type": "client",
-                    "hasGetter": true,
-                    "hasSetter": false,
-                    "description": "The current local client, nil when unauthenticated"
-                }
-            },
-            "constructable": false,
-            "className": "networking",
-            "methods": {
-                "getStats": {
-                    "returns": [
-                        "netStats"
-                    ],
-                    "parameters": [],
-                    "description": "Internal use"
-                },
-                "broadcast": {
-                    "returns": [],
-                    "parameters": [
-                        {
-                            "name": "eventName",
-                            "type": "string"
-                        },
-                        {
-                            "type": "..."
-                        }
-                    ],
-                    "description": "Reliably sends the information you pass to all direct connections. Note that a client cannot broadcast to other clients as they are not directly connected."
-                },
-                "sendToServer": {
-                    "returns": [],
-                    "parameters": [
-                        {
-                            "name": "eventName",
-                            "type": "string"
-                        },
-                        {
-                            "type": "..."
-                        }
-                    ],
-                    "description": "This is an alias for broadcast that only works on the client side."
-                },
-                "initiate": {
-                    "returns": [],
-                    "parameters": [
-                        {
-                            "name": "appId",
-                            "type": "string"
-                        }
-                    ],
-                    "description": "Initiate a networked app"
-                },
-                "sendToClient": {
-                    "returns": [],
-                    "parameters": [
-                        {
-                            "name": "client",
-                            "type": "client"
-                        },
-                        {
-                            "name": "eventName",
-                            "type": "string"
-                        },
-                        {
-                            "type": "..."
-                        }
-                    ],
-                    "description": "[SERVER ONLY] Reliably sends the information you pass"
-                },
-                "getClient": {
-                    "returns": [
-                        "client"
-                    ],
-                    "parameters": [
-                        {
-                            "name": "nameOrClientId",
-                            "type": "string"
-                        }
-                    ],
-                    "description": "Returns the client for the matching name or id you provide"
-                }
-            }
-        },
-        "process": {
-            "events": [],
-            "properties": [],
-            "constructable": false,
-            "className": "process",
-            "methods": {
-                "openUrl": {
-                    "returns": [],
-                    "parameters": [],
-                    "description": "Opens the provided URL in the user's browser"
-                }
-            }
-        },
-        "reflection": {
-            "events": [],
-            "properties": [],
-            "constructable": false,
-            "className": "reflection",
-            "methods": {
-                "getClasses": {
-                    "returns": [
-                        "table"
-                    ],
-                    "parameters": [],
-                    "description": "Returns a table of class names"
-                },
-                "getClassReflection": {
-                    "returns": [
-                        "table"
-                    ],
-                    "parameters": [
-                        {
-                            "name": "className",
-                            "type": "string"
-                        }
-                    ],
-                    "description": "Returns a dictionary with information about a class. Returns nil if classname is invalid"
+                "scale": {
+                    "hasSetter": true,
+                    "description": "",
+                    "type": "vector3",
+                    "hasGetter": true
                 }
             }
         }
     },
-    "generatedAt": "27/09/2020 19:16:10",
     "build": "0280",
-    "arch": "x64",
     "os": "OSX",
+    "arch": "x64",
+    "generatedAt": "27/09/2020 19:22:17",
     "version": "0.28.0"
 }

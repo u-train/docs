@@ -31,6 +31,7 @@ Deviap hosts a collection of fonts, it is reasonable to assume these fonts are a
 | Open Sans | Bold Italic | deviap:fonts/openSansBoldItalic.ttf |
 | Open Sans | Extra Bold | deviap:fonts/openSansExtraBold.ttf |
 | Open Sans | Extra Bold Italic | deviap:fonts/openSansExtraBoldItalic.ttf |
+.
 
 | Font Name | Style | Asset Locator |
 | --- | --- | ------------- |
@@ -46,3 +47,4 @@ Deviap hosts a collection of fonts, it is reasonable to assume these fonts are a
 | Source Code | Medium Italic | deviap:fonts/sourceCodeProMediumItalic.ttf |
 | Source Code | Black | deviap:fonts/sourceCodeProBlack.ttf |
 | Source Code | Black Italic | deviap:fonts/sourceCodeProBlackItalic.ttf |
+.

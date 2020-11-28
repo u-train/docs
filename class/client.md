@@ -1,10 +1,3 @@
----
-title: client
-description: 
-published: true
-tags: 
----
-
 # Introduction
 
 The `client` class represents the individual app user. It has just four properties, which are all read-only. We can use these properties to provide user-based logic, such as a permissions system or access to certain aspects of the application.

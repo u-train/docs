@@ -38,7 +38,7 @@ Example:
 | scene | false | singleton | The 3D scene |
 | input | false | singleton | Provides an entry point to user input (mouse, keyboard, etc) |
 | json | false | singleton | JSON utility functionality |
-| base64 | false | singleton | placeholder |
+| base64 | false | singleton | Provides functionality to represent binary data using ASCII |
 | dev | false | singleton | **Restricted, requesting this permission may have your app rejected** |
 | networking | false | singleton | Provides the functionality to interact with the server (client - server model) |
 | http | false | singleton | Provides the functionality to make web requests (GET, POST, etc) |

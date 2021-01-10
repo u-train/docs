@@ -36,18 +36,18 @@ Example:
 | --- | --- | --- | --- | 
 | disconnect | false | function | Provides the power of disconnecting event listeners |
 | scene | false | singleton | The 3D scene |
-| input | false | singleton | placeholder |
-| json | false | singleton | placeholder |
+| input | false | singleton | Provides an entry point to user input (mouse, keyboard, etc) |
+| json | false | singleton | JSON utility functionality |
 | base64 | false | singleton | placeholder |
 | dev | false | singleton | **Restricted, requesting this permission may have your app rejected** |
-| networking | false | singleton | placeholder |
-| http | false | singleton | placeholder |
-| interface | false | singleton | placeholder |
+| networking | false | singleton | Provides the functionality to interact with the server (client - server model) |
+| http | false | singleton | Provides the functionality to make web requests (GET, POST, etc) |
+| interface | false | singleton | Top-level interface that controls what is displayed on the screen |
 | construct | false | function | Provides the ability to create new instances |
-| debug | false | singleton | placeholder |
-| tween | false | singleton | placeholder |
-| graphics | false | singleton | placeholder |
-| reflection | false | singleton | placeholder |
-| datastore | false | singleton | placeholder |
-| process | false | singleton | placeholder |
+| debug | false | singleton | Provides a way to debug the current enviroment |
+| tween | false | singleton | Provides functionality to interpolate smoothly via a value or set of values under an object |
+| graphics | false | singleton | Provides functionality to change or debug graphics |
+| reflection | false | singleton | Provides a way to see what objects, values or enums are reflected from the engine to lua visibility |
+| datastore | false | singleton | Provides a way to save, store and manipulate client data |
+| process | false | singleton | Provides functionality to redirect |
 | workshop | false | singleton | **Restricted, requesting this permission may have your app rejected**  |

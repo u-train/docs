@@ -5,7 +5,7 @@ published: true
 tags: 
 ---
 
-# Fonts
+## About
 
 You can package custom fonts in your app bundle, but be sure to check that the font you are including has an open license.
 
@@ -46,4 +46,3 @@ Deviap hosts a collection of fonts, it is reasonable to assume these fonts are a
 | Source Code | Medium Italic | deviap:fonts/sourceCodeProMediumItalic.ttf |
 | Source Code | Black | deviap:fonts/sourceCodeProBlack.ttf |
 | Source Code | Black Italic | deviap:fonts/sourceCodeProBlackItalic.ttf |
-

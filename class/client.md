@@ -4,7 +4,7 @@ The `client` class represents the individual app user. It has just four properti
 
 ## Example
 
-```
+```lua
 if client.membership == "plus" then
   -- We can do anything with this data.
 else if client.membership == "pro" then

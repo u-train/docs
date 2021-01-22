@@ -19,7 +19,7 @@ The first part of the easing's name indicates the direction the easing has. The 
 ---
 
 |Easing Names
-|---
+|---|
 |linear
 |inQuad
 |outQuad

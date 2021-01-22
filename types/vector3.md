@@ -5,8 +5,6 @@ published: true
 tags: 
 ---
 
-# Vector3
-
 Vector3s consist of three components: `x`, `y`, `z`.
 
 ## Constructors

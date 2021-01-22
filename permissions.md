@@ -5,13 +5,14 @@ published: true
 tags: 
 ---
 
-# Permissions in Deviap's manifest.json
+## Permissions in Deviap's manifest.json
 
-Applications within Deviap are ran in a sandboxed environment. You need to specify explicitly what singletons your app will access in the manifest file. 
+Applications within Deviap are ran in a sandboxed environment. You need to specify explicitly what singletons your app will access in the manifest file.
 
 Apps should not request permission to access singletons that it does not need or use, doing so is bad practice and may have your app removed from the library.
 
 Example:
+
 ```json
 {
     "schema": 1,
@@ -33,7 +34,7 @@ Example:
 ```
 
 | permission | default | type | description |
-| --- | --- | --- | --- | 
+| --- | --- | --- | --- |
 | disconnect | false | function | Provides the power of disconnecting event listeners |
 | scene | false | singleton | The 3D scene |
 | input | false | singleton | Provides an entry point to user input (mouse, keyboard, etc) |

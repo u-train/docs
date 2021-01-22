@@ -5,9 +5,9 @@ published: true
 tags: 
 ---
 
-# Colour
+## Fields
 
-Colours consist of three components: `r`, `g`, `b`, which are red, green, and blue respectively. 
+Colours consist of three components: `r`, `g`, `b`, which are red, green, and blue respectively.
 
 ## Constructors
 
@@ -34,10 +34,12 @@ Shorthand for colour(math.random(), math.random(), math.random())
 `colour` `a:invert()`  
 Returns the inverted colour
 
-
 ## Example
+
 Let's imagine we have a three dimensional object, a `block` - it has no colour though, so we need to establish one for it. The following is how one would append the `colour` property to a block. Truly, it is quite simple!
 
-```
+```lua
+
 block.colour = colour.white()
+
 ```

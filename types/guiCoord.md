@@ -5,8 +5,6 @@ published: true
 tags: 
 ---
 
-# guiCoord
-
 guiCoords consist of two `vector2` components: `scale` and `offset`
 
 ## Constructors

@@ -5,8 +5,6 @@ published: true
 tags: 
 ---
 
-# Quaternions
-
 Quaternions consist of four components: `x`, `y`, `z` and `w`.
 
 ## Constructors
@@ -66,5 +64,3 @@ Returns the rotation expressed as an Euler angle
   
   rotation = rotation * quaternion.euler(0, math.rad(45), 0)
 ```
-
-

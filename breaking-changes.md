@@ -5,15 +5,16 @@ published: true
 tags: 
 ---
 
-# Breaking Changes
+## Breaking Changes
 
 - `tevurl:` no longer works, locating resources with this identifier will fail. Please use `deviap:` instead.
   
   e.g. `"tevurl:fonts/openSansBold.ttf"` is now `deviap:fonts/openSansBold.ttf`
 - `tevgit:` no longer works for locating assets such as images and fonts, use `devgit:` instead.
 
-# Deprecations
+## Deprecations
+
 Please immediately update your code to fix any deprecation warnings.
 
-- `teverse` namespace forwarded to `core`. 
-- `tevgit:` for locating scripts in require has been deprecated. 
+- `teverse` namespace forwarded to `core`.
+- `tevgit:` for locating scripts in require has been deprecated.

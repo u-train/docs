@@ -23,47 +23,47 @@ The first part of the easing's name indicates the direction the easing has. The 
 
 ---
 
-| Easing Names |
-| --- |
-| linear |
-| inQuad |
-| outQuad |
-| inOutQuad |
-| outInQuad |
-| inCubic |
-| outCubic |
-| inOutCubic |
-| outInCubic |
-| inQuart |
-| outQuart |
-| inOutQuart |
-| outInQuart |
-| inQuint |
-| outQuint |
-| inOutQuint |
-| outInQuint |
-| inSine |
-| outSine |
-| inOutSine |
-| outInSine |
-| inExpo |
-| outExpo |
-| inOutExpo |
-| outInExpo |
-| inCirc |
-| outCirc |
-| inOutCirc |
-| outInCirc |
-| inElastic |
-| outElastic |
-| inOutElastic |
-| outInElastic |
-| inBack |
-| outBack |
-| inOutBack |
-| outInBack |
-| inBounce |
-| outBounce |
-| inOutBounce |
-| outInBounce |
+| Easing styles | Description |
+| --- | --- |
+| linear | Linear steps to goal. |
+| inQuad | Increasing quadratic steps goal. |
+| outQuad | Decreasing qudaratic steps to goal. |
+| inOutQuad | |
+| outInQuad | |
+| inCubic | |
+| outCubic | |
+| inOutCubic | |
+| outInCubic | |
+| inQuart | |
+| outQuart | |
+| inOutQuart | |
+| outInQuart | |
+| inQuint | |
+| outQuint | |
+| inOutQuint | |
+| outInQuint | |
+| inSine | |
+| outSine | |
+| inOutSine | |
+| outInSine | |
+| inExpo | |
+| outExpo | |
+| inOutExpo | |
+| outInExpo | |
+| inCirc | |
+| outCirc | |
+| inOutCirc | |
+| outInCirc | |
+| inElastic | |
+| outElastic | |
+| inOutElastic | |
+| outInElastic | |
+| inBack | |
+| outBack | |
+| inOutBack | |
+| outInBack | |
+| inBounce | |
+| outBounce | |
+| inOutBounce | |
+| outInBounce | |
 ---

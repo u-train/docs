@@ -20,8 +20,10 @@ The first part of the easing's name indicates the direction the easing has. The 
 | in | The size of each step starts at 0 unit, then increases over time. |
 | out  | The size of each step starts at 1 unit, then decreases over time. |
 | inOut | The size of each step starts at 0 and increases over time. Then, it peaks at the middle of the tween. and decreases over time. |
-
 ---
+
+# Easing Styles
+The following is a list of easing styles to implement.
 
 | Easing styles | Description |
 | --- | --- |

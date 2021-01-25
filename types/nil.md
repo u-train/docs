@@ -5,7 +5,7 @@ published: true
 tags: 
 ---
 
-## Rationale
+## Purpose
 
 Everything has some form of a value, such as the number 1. Another example would be a boolean `true`. However, it is useful to indicate that there is a lack of a value. Such examples are...
 

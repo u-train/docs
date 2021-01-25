@@ -15,23 +15,23 @@ Easings are how the intermediate steps are generated. By default, they're genera
 
 The first part of the easing's name indicates the direction the easing has. The second part will tell you how style of the easing. For example, a valid tweening name would be `inExpo`. The first part tells you the direction is `in` and the second part tells you the style is `expo`ential.
 
-| Directions | Description |
-| --- | --- |
-| in | The size of each step starts at 0 unit, then increases over time. |
-| out  | The size of each step starts at 1 unit, then decreases over time. |
-| inOut | The size of each step starts at 0 and increases over time. Then, it peaks at the middle of the tween and decreases over time. |
-| outIn | The size of each step starts at 1 and decreases over time. Then, it peaks at the middle of the tween and start to increase over time.
+| Directions | Description | Image |
+| --- | --- | --- |
+| in | The size of each step starts at 0 unit, then increases over time. | [missing] |
+| out  | The size of each step starts at 1 unit, then decreases over time. | [missing] |
+| inOut | The size of each step starts at 0 and increases over time. Then, it peaks at the middle of the tween and decreases over time. | [missing] |
+| outIn | The size of each step starts at 1 and decreases over time. Then, it peaks at the middle of the tween and start to increase over time. | [missing] |
 
-| Styles | Description |
-| --- | --- |
-| linear | Linear steps to goal. |
-| quad |  Quadratic steps to goal. |
-| cubic | Cubic steps to goal. |
-| quart | Similar to quad, but at a faster increase in rate.  |
-| quint | Similar to quad, but at a slower increase in rate. |
-| sine | ? |
-| expo | Expotential steps to goal. |
-| circ | ? |
-| elastic | ? |
-| back | ? |
-| bounce | ? |
+| Styles | Description | Graph |
+| --- | --- | --- |
+| linear | Linear steps to goal. | [missing] |
+| quad |  Quadratic steps to goal. | [missing] |
+| cubic | Cubic steps to goal. | [missing] |
+| quart | Similar to quad, but at a faster increase in rate.  | [missing] |
+| quint | Similar to quad, but at a slower increase in rate. | [missing] |
+| sine | ? | [missing] |
+| expo | Expotential steps to goal. | [missing] |
+| circ | ? | [missing] |
+| elastic | ? | [missing] |
+| back | ? | [missing] |
+| bounce | ? | [missing] |

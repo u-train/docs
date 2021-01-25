@@ -23,7 +23,8 @@ The first part of the easing's name indicates the direction the easing has. The 
 
 ---
 
-# Easing Styles
+## Easing Styles
+
 The following is a list of easing styles to implement.
 
 | Easing styles | Description |

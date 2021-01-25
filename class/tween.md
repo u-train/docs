@@ -29,9 +29,9 @@ The first part of the easing's name indicates the direction the easing has. The 
 | cubic | Cubic steps to goal. | [missing] |
 | quart | Similar to quad, but at a faster increase in rate.  | [missing] |
 | quint | Similar to quad, but at a slower increase in rate. | [missing] |
-| sine | ? | [missing] |
+| sine | Sinusoidal equation. | f(x) = sin(x*pi/2) |
 | expo | Expotential steps to goal. | [missing] |
-| circ | ? | [missing] |
-| elastic | ? | [missing] |
-| back | ? | [missing] |
-| bounce | ? | [missing] |
+| circ | Equation for half circle (semi-circle) w/ a square root applied. | [missing] |
+| elastic | Spring-based movement that compensates. | [missing] |
+| back | Reverse elastic spring-based movement that compensates. | [missing] |
+| bounce | Recursive-based movement. | f(x) = 1-def(1-x) |

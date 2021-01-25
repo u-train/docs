@@ -15,7 +15,7 @@ Booleans are either `true` or `false`. Most of the time, you'll find yourself us
 
 ## Boolean logic
 
-> Note: If something has the attribute of being `true`, you can refer to it as `truthy` value. The opposite would be `falsey`.
+> *Note*: If something has the attribute of being `true`, you can refer to it as `truthy` value. The opposite would be `falsey`.
 
 Besides having `true` and `false`, you also have boolean operators.
 
@@ -79,7 +79,7 @@ print({} == {}) --> false (not the same table)
 print("" == "") --> true (the same content)
 ```
 
-> Note: Tables can override both equality operator using a metatable and setting the corresponding metamethods. For example, `vector2(1, 1) == vector2(1, 1)` should really be true (since they're equal) and not false (even if they're different tables). So, the equal operator is overriden to do this. Read the documentation for tables for more information.
+> *Note*: Tables can override both equality operator using a metatable and setting the corresponding metamethods. For example, `vector2(1, 1) == vector2(1, 1)` should really be true (since they're equal) and not false (even if they're different tables). So, the equal operator is overriden to do this. Read the documentation for tables for more information.
 
 ### Inequality
 
@@ -102,7 +102,7 @@ print(1 <= 0) --> false
 print(1 <= 1) --> *true
 ```
 
-> Note: Just like with equality operators, tables can override inequality operators as well. So, it may not necessarily error as shown above.
+> *Note*: Just like with equality operators, tables can override inequality operators as well. So, it may not necessarily error as shown above.
 
 ## Usages
 
@@ -128,7 +128,7 @@ do -- Nicer way.
 end
 ```
 
-> Note: Keep in mind if `a` is false, it will still default anyways! Be sure you do not care about this.
+> *Note*: Keep in mind if `a` is false, it will still default anyways! Be sure you do not care about this.
 
 Let's try another, conditional declarations.
 
@@ -150,7 +150,7 @@ do -- Shorter way!
 end
 ```
 
-> Note: There's a minor problem with the shorter way. Can you find it? Hint: replace 0 in the shorter example with a falsey value and evaulate.
+> *Note*: There's a minor problem with the shorter way. Can you find it? Hint: replace 0 in the shorter example with a falsey value and evaulate.
 
 You can also chain them along like so:
 
@@ -163,6 +163,6 @@ local value = (cond1 and 1) or (cond2 and 2) or 0
 print(value) --> 0
 ```
 
-> Note: You may note that the parathesis can be removed and it will still work as intended. However, they are there for the reader.
-
-> Experiment: Change the values of cond1 and cond2 to something truthy. See what happens with both of them are truthy. Diagram which part of the if-statement is in the expression.
+> *Note*: You may note that the parathesis can be removed and it will still work as intended. However, they are there for the reader.
+>
+> *Experiment*: Change the values of cond1 and cond2 to something truthy. See what happens with both of them are truthy. Diagram which part of the if-statement is in the expression.

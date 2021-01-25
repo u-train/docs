@@ -87,6 +87,6 @@ local nilTest = function(arg1)
      return arg1 == nil
 end
 
-print(nilTest(nil)) --> true
+print(nilTest()) --> true
 print(nilTest("arg1")) --> false
 ```
